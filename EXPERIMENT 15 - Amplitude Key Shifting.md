@@ -1,4 +1,4 @@
-# EXPERIMENT 15 - Amplitude Key Shifting :page_facing_up: 
+# EXPERIMENT 15 - Amplitude Shift Keying :page_facing_up: 
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;Modern telecommunications utilize multiplexing techniques like TDM and FDM to efficiently share limited channel resources among multiple users. Amplitude Shift Keying (ASK) is a specific digital modulation method where the carrier wave's amplitude is switched between a maximum state and a suppressed state based on the binary input. Because the carrier is effectively "switched" on for a logic high (1) and off for a logic low (0), the process is commonly known as On-Off Keying (OOK). This technique allows discrete digital information to be represented by the envelope of a continuous analog signal.
 </p>
