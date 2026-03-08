@@ -69,7 +69,7 @@
 ---
 
 <details>
-<summaryEXPERIMENT 18 - Quadrature Phase Shift Keying</summary> 
+<summary>EXPERIMENT 18 - Quadrature Phase Shift Keying</summary> 
 
 **INTRODUCTION**
 * Quadrature Phase Shift Keying is an advanced variation of BPSK that transmits two bits per symbol by utilizing four distinct phase states. By employing orthogonal carriers (90 degrees apart), QPSK can transmit at twice the rate of BPSK within the same radio-frequency bandwidth. This experiment explores serial-to-parallel conversion and the summation of orthogonal carriers.
