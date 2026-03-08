@@ -1,11 +1,9 @@
 # Antenna Trainer Kit :page_facing_up: 
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The Zero-Crossing Detector recovers messages from FM signals by first passing the input through a comparator to create a heavily clipped square wave. This square wave triggers the ZCD to generate a series of pulses with a fixed duration every time the signal crosses zero volts. Because these pulses have a constant "mark" time, any change in the FM signal's frequency directly alters the signal's duty cycle (mark/space ratio). As shown in the block diagram, this pulse train is then passed through a low-pass filter, which smooths the varying duty cycle to reconstruct the original demodulated message.
+&nbsp;&nbsp;&nbsp;&nbsp;The Antenna Trainer Kit is a modular laboratory system designed to bridge the gap between electromagnetic theory and practical RF engineering. It serves as a specialized platform for observing how physical design—including the length, shape, and arrangement of conductive elements—shapes the distribution of electromagnetic energy. The kit allows for the experimental mapping of radiation patterns and the measurement of critical performance metrics like gain, directivity, and impedance matching.
 </p>
 
-<img width="296" height="273" alt="image" src="https://github.com/user-attachments/assets/fac7208e-d280-404f-b198-199d13331f54" />
-
-<img width="401" height="107" alt="image" src="https://github.com/user-attachments/assets/596d4b55-ab3f-453b-9577-8966832ba748" />
+<img width="636" height="383" alt="image" src="https://github.com/user-attachments/assets/de930eae-8ecf-488b-a404-438769a22527" />
 
 ---
 
