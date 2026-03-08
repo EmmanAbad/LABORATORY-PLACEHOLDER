@@ -50,7 +50,7 @@
 * The FM signal is "squared up" using a comparator to trigger a pulse generator. Because the pulses have a fixed width, changing the frequency changes the duty cycle. A low-pass filter then averages these pulses to reconstruct the original wave.
 
 **WAVEFORM RESULT EXAMPLE**
-<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/6340d6e7-e303-482f-8ae8-b14866ee548d" />
+<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/8934f2f8-df79-4b29-8b18-b1e31d934578" />
 
 </details>
 
@@ -112,7 +112,7 @@
 * When bandwidth is restricted, sharp digital pulses become rounded, causing Inter-Symbol Interference. This experiment shows how a comparator can "square up" these distorted waves to restore clear logic levels for the receiver.
 
 **WAVEFORM RESULT EXAMPLE**
-![Uploading image.png…]()
+<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/75614157-3f98-4d61-b7aa-9787ff6f8495" />
 
 </details>
 
