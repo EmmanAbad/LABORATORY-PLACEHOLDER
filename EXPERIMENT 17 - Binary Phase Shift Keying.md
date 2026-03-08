@@ -61,7 +61,7 @@
 **Example Output**
 <img width="550" height="173" alt="image" src="https://github.com/user-attachments/assets/88abea36-929d-4f19-a8b6-0aae4935cd75" />
 <img width="960" height="96" alt="image" src="https://github.com/user-attachments/assets/fc5153ad-c22f-4640-9d85-4b1c93261b3d" />
-<details><summary><b>[Reference]</b></summary><br>https://pysdr.org/content/digital_modulation.html<br></details>
+<details><summary><b>[Reference]</b></summary><br>https://pysdr.org/content/digital_modulation.html#phase-shift-keying-psk<br></details>
 
 **Learning**
 <p align="justify">
