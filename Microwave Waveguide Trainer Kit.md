@@ -40,6 +40,11 @@
 | | **Movable Short Circuit** | A sliding metal plunger that creates a complete reflection, allowing for the measurement of standing wave minima and maxima. |
 | | **WR-90 Hardware Kit** | Includes mounting stands, flange screws, and alignment hardware necessary for the mechanical assembly of the waveguide system. |
 
+**Components Learning**
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;The laboratory experiment provided a comprehensive understanding of the materials and components essential for microwave engineering, highlighting the critical interplay between electrical function and mechanical precision. By interacting with active modules like the Gunn Diode Oscillator and the 1 kHz Square-Wave Modulator, it became evident how coherent signals are generated and modulated for improved detection sensitivity. Passive components, specifically the Ferrite Isolator and Variable Vane Attenuator, were identified as indispensable for system safety and signal management, protecting delicate hardware from reflected power and saturation. Furthermore, the hands-on application of the Slotted Line Section and Absorption Frequency Meter bridged the gap between theoretical wave propagation and measurable reality. Finally, the assembly of WR-90 hardware underscored that mechanical factors such as flange cleanliness and secure connections are just as vital as electrical design in minimizing signal loss and ensuring efficient transmission.
+</p>
+
 ---
 
 **Procedure – Part A: Mechanical Assembly and Safety**
