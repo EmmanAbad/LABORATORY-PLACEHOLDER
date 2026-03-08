@@ -25,10 +25,7 @@
 
 ### System Equipment and Antenna Elements
 **Laboratory Hardware**
-* <details>
-<summary>Image:</summary>
-   <img width="425" height="212" alt="image" src="https://github.com/user-attachments/assets/e8b5393a-ca9e-4170-9907-28c0bdb66166" />
-</details> **Master Antenna Trainer Unit**: The central control unit providing a regulated RF signal source, modulation controls, and a display for signal strength monitoring. 
+* **Master Antenna Trainer Unit**: The central control unit providing a regulated RF signal source, modulation controls, and a display for signal strength monitoring. 
 * **Matching Stub**: A transmission-line tuning device used to compensate for reactive components and match antenna impedance to the feeder line.
 * **Transmitting Mast**: A rotatable structure with a 360° angular scale used to adjust and measure the orientation of the transmitting antenna.
 * **Receiving Mast**: A fixed support that holds the detector at a constant distance to maintain far-field measurement conditions.
