@@ -54,7 +54,13 @@
 3.  Tune the reference voltage until the comparator output perfectly replicates the original digital timing.
 
 <img width="432" height="219" alt="image" src="https://github.com/user-attachments/assets/8f5ee704-3698-4010-8dcc-26d763e32e8e" />
- 
+
+**Example Output**
+<img width="823" height="449" alt="image" src="https://github.com/user-attachments/assets/28ceed73-a188-45e3-af72-01f81e8e183d" />
+<img width="810" height="281" alt="image" src="https://github.com/user-attachments/assets/9287d862-cd8c-4966-8e4b-ff016a4b71b3" />
+<img width="827" height="449" alt="image" src="https://github.com/user-attachments/assets/102f1e9d-a2a0-48a7-acf4-344c3f1008b4" />
+<details><summary><b>[Reference]</b></summary><br>https://pysdr.org/content/digital_modulation.html#amplitude-shift-keying-ask<br></details>
+
 **Learning**
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;The sequence of procedures demonstrates the transition of a digital signal through an analog medium and its subsequent return to a digital state. In Part A, you learn the fundamental mechanics of On-Off Keying (OOK) by observing how a digital sequence physically gates a carrier wave, ensuring transmission only occurs during logic high states. Part B reveals the practical limitations of analog hardware, as the envelope detector successfully strips the carrier but introduces signal rounding due to the loss of high-frequency harmonics in the low-pass filter. Finally, Part C teaches the necessity of decision-making components in digital systems; the comparator acts as a restorative stage that uses a voltage threshold to convert those rounded, distorted transitions back into the sharp, precise square waves required for accurate data reception.
