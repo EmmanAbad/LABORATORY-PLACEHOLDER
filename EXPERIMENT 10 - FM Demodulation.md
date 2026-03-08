@@ -3,9 +3,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;The Zero-Crossing Detector recovers messages from FM signals by first passing the input through a comparator to create a heavily clipped square wave. This square wave triggers the ZCD to generate a series of pulses with a fixed duration every time the signal crosses zero volts. Because these pulses have a constant "mark" time, any change in the FM signal's frequency directly alters the signal's duty cycle (mark/space ratio). As shown in the block diagram, this pulse train is then passed through a low-pass filter, which smooths the varying duty cycle to reconstruct the original demodulated message.
 </p>
 
-<img width="401" height="107" alt="image" src="https://github.com/user-attachments/assets/596d4b55-ab3f-453b-9577-8966832ba748" />
-
 <img width="296" height="273" alt="image" src="https://github.com/user-attachments/assets/fac7208e-d280-404f-b198-199d13331f54" />
+
+<img width="401" height="107" alt="image" src="https://github.com/user-attachments/assets/596d4b55-ab3f-453b-9577-8966832ba748" />
 
 ---
 
