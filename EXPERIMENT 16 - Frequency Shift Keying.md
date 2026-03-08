@@ -66,7 +66,7 @@
 
 <img width="557" height="288" alt="image" src="https://github.com/user-attachments/assets/f331b9be-ad8f-49b1-9ca9-820f6ac60b19" />
 <img width="820" height="559" alt="image" src="https://github.com/user-attachments/assets/5663ccb3-33e7-40c0-bd28-138c1a595f69" />
-<details><summary><b>[Reference]</b></summary><br>https://pysdr.org/content/digital_modulation.html<br></details>
+<details><summary><b>[Reference]</b></summary><br>https://pysdr.org/content/digital_modulation.html#frequency-shift-keying-fsk<br></details>
 
 **Learning**
 <p align="justify">
