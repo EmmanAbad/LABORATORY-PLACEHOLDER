@@ -25,13 +25,18 @@
 
 ---
 
-**EXPERIMENT 9: Frequency Modulation** 
+<details>
+<summary> **EXPERIMENT 9: Frequency Modulation** </summary> 
 
 **INTRODUCTION**
 * Explores FM as a robust alternative to amplitude modulation, demonstrating how varying a carrier’s frequency rather than its amplitude provides superior resistance to electrical noise.
 
 **EXPLANATION**
 * By using a Voltage Controlled Oscillator (VCO), an analog message is used to shift the carrier frequency. The amount of "swing" depends on the message's amplitude, while the speed of that swing depends on the message's frequency.
+
+**WAVEFORM RESULT EXAMPLE**
+
+</details>
 
 ---
 
