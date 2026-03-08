@@ -50,8 +50,7 @@
 | | <details><summary><b>Zeppelin (Zepp) Antenna</b> (Click to View)</summary><br>
 
 <br></details> | An end-fed half-wave antenna historically utilized in airship communications. |
-| **Yagi-Uda Arrays** | <details><summary><b>3 & 5-Element Folded Dipole</b> (Click to View)<br><img width="328" height="533" alt="image" src="https://github.com/user-attachments/assets/5648122a-5733-477e-9da4-1ea5734b879c" /><br>
-<br><img width="345" height="322" alt="image" src="https://github.com/user-attachments/assets/a8c36c3a-9d4a-4506-81df-6ddf59c6310c" />
+| **Yagi-Uda Arrays** | <details><summary><b>3 & 5-Element Folded Dipole</b> (Click to View)<br><img width="328" height="533" alt="image" src="https://github.com/user-attachments/assets/5648122a-5733-477e-9da4-1ea5734b879c" /><img width="345" height="322" alt="image" src="https://github.com/user-attachments/assets/a8c36c3a-9d4a-4506-81df-6ddf59c6310c" />
 
 
 
