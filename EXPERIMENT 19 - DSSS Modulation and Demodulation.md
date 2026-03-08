@@ -1,4 +1,4 @@
-# EXPERIMENT 19 - DSSS Modulation and Demodulation :page_facing_up: 
+# EXPERIMENT 19 - DSSS Modulation and Demodulation:page_facing_up: 
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;Direct Sequence Spread Spectrum (DSSS) is a variation of Double Sideband Suppressed Carrier (DSBSC) modulation that replaces a standard sinusoidal carrier with a pseudo-noise (PN) sequence pulse train. Because a pulse train consists of a fundamental frequency and an infinite series of harmonics, DSSS effectively modulates the message across a theoretically infinite number of sinusoidal carriers. This process distributes the message energy across a wide frequency spectrum, making the signal exceptionally resilient to interference or jamming. To compromise the data, an interloper would need to disrupt a significant portion of these numerous sidebands simultaneously.
 </p>
