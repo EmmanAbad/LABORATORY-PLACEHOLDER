@@ -1,17 +1,15 @@
 # EXPERIMENT 12 - PCM Encoding :page_facing_up: 
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Digital transmission is rapidly replacing analog methods in modern commercial applications because of its superior ability to resist interference from electrical noise. While many different digital systems exist for various purposes they all require that analog information such as speech or music be converted into a digital format before transmission. This conversion process relies on sampling where the voltage of the analog signal is measured at specific regular intervals.
-
-&nbsp;&nbsp;&nbsp;&nbsp;Figure 1a illustrates a message consisting of a pure sinewave alongside the digital sampling signal used to trigger measurements. The resulting waveform shows natural sampling where the sample follows any voltage changes occurring during the measurement period. Some digital systems cannot function with these changing samples so an alternative approach is used as seen in Figure 1b. This method is known as sample and hold or pulse amplitude modulation and it ensures the sample size remains fixed at the exact moment the signal is measured.
+&nbsp;&nbsp;&nbsp;&nbsp;Digital transmission systems have largely replaced analog methods in the telecommunications industry which makes understanding pulse code modulation a necessity for technical professionals. PCM functions by converting analog message signals into a serial stream of binary digits through a process known as encoding. This procedure involves sampling the analog voltage at regular intervals and comparing those samples to specific reference voltages called quantisation levels. The system then assigns the closest level to the sample and outputs the corresponding binary number one bit at a time. The encoder clock frequency is a critical performance factor because it must be at least twice the message frequency to prevent aliasing during sampling. Another significant concern is quantisation error which occurs when the original sample value is lost because it does not perfectly match a quantisation level. Since the receiver cannot recover the exact original voltage this error is reproduced during decoding. Increasing the number of quantisation levels can minimize this effect by reducing the gap between the sample and the reference voltage.
 </p>
 
-<img width="383" height="246" alt="image" src="https://github.com/user-attachments/assets/5fd5192f-98cd-4b30-8c13-e42ecc090eae" />
+<img width="461" height="191" alt="image" src="https://github.com/user-attachments/assets/af57e8af-6e6c-46eb-bb79-194e2436643d" />
 
 ---
 
 ### Introduction 
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Modern communication systems are increasingly shifting from analog to digital transmission because digital signals are far more effective at resisting interference from electrical noise. While information such as speech or music starts as an analog signal it must be converted to a digital format through a process called sampling. This involves measuring the analog signal's voltage at regular intervals to create a discrete representation. Techniques such as natural sampling and sample and hold schemes are used to capture these measurements with the latter being essential for systems where changing sample voltages are unacceptable.
+&nbsp;&nbsp;&nbsp;&nbsp;This experiment investigates the fundamentals of Pulse Code Modulation (PCM) through the use of the Emona Telecoms-Trainer 101. The primary objective is to observe the conversion of analog signals into a digital format by sampling, quantizing, and encoding various input voltages. By analyzing both static DC and dynamic signals, the study aims to evaluate the accuracy of the 8-bit encoding process and the impact of quantisation error on signal integrity. This provides a practical foundation for understanding how digital transmission systems maintain data fidelity in modern telecommunications.
 </p>
 
 ---
@@ -33,58 +31,41 @@
 
 ---
 
-**Procedure – Part A: Sampling a Sample Message**
-1. Gather the required trainer components and ground the oscilloscope leads into a (GND) socket.
-2. Connect the Master Signals 2kHz SINE output to the Dual Analog Switch input, using the 8kHz DIGITAL output as the control signal.
-3. Set the Trigger Source to CH1 (or INT) and the Mode to CH1.
-4. Adjust the Timebase to display two cycles of the 2kHz sine wave and set Vertical Attenuation to 1V/div.
-5. Switch the scope Mode to DUAL to view both the original message and the sampled output simultaneously.
-6. Draw the two resulting waveforms to scale, ensuring enough space remains for a third waveform later.
-7. Modify the existing circuit by replacing the electronically controlled switch with a sample and hold module while keeping the 2kHz sine wave and 8kHz pulse train as the message and sampling signals.
-8. Use the remaining space on the graph paper to draw the new sample and hold message to scale.
+**Procedure – Part A: Static DC Encoding**
+1. Gather the necessary equipment including the Emona Telecoms-Trainer 101 and a dual channel 20MHz oscilloscope.
+2. Set the oscilloscope trigger source to Channel 1 and the PCM Encoder module to PCM mode.
+3. Connect the encoder to an 8kHz digital clock signal from the Master Signals module.
+4. Apply a 0V DC input to the encoder and monitor the Frame Synchronisation (FS) signal on the scope to stabilize the display.
+5. Adjust the scope timebase to 0.1ms/div and use dual mode to view the clock input and FS output simultaneously.
+6. Observe the 10-bit data output to identify the specific bit pattern associated with a zero-volt input.
 
-**Procedure – Part B: Sampling Speech**
-1. Disconnect the 2kHz sine output and connect the speech module output to the circuit input.
-2. Change the timebase to 2ms/div to accommodate the complexity of audio signals.
-3. talk, sing, or hum into the microphone to observe how speech is converted into discrete samples.
+**Procedure – Part B: Variable DC Encoding**
+1. Connect a Variable DCV module to the PCM Encoder input.
+2. Establish a zero-volt reference by aligning the Channel 1 trace with a horizontal line on the scope.
+3. Increase the DC voltage by turning the control clockwise until the output reaches the maximum code of 11111111.
+4. Decrease the voltage by turning the control anti-clockwise until the output reaches the minimum code of 00000000.
+5. Measure and record these boundary voltages in Table 1 to determine the encoder's peak-to-peak amplitude capacity.
 
-**Procedure – Part C: Reconstructing a Sampled Message**
-1. Set Timebase to $0.1\text{ ms/div}$
-2. Set Gain to middle and Cut-off Frequency fully anti-clockwise.
-3. Disconnect Speech module; connect S/H output to Filter input (per Figure 7).
-4. Connect Ch. 1 to the original message and Ch. 2 to the Filter output.
-5. Slowly turn the Cut-off control clockwise until the message signal reappears on the scope.
+**Procedure – Part C: Quantisation Analysis**
+1. Set the Variable DC control to approximately the middle of its travel range.
+2. Move the control slightly left and right to observe if the output code remains unchanged for a range of sample voltages.
+3. Calculate the voltage difference between quantization levels by dividing the total measured range from Table 1 by 256.
 
-**Procedure – Part D: Aliasing**
-1. Set the VCO module's Frequency Adjust control fully clockwise.
-2. Set the Range control to the LO position.
-3. Update the set-up as shown in Figure 9, using the VCO module to provide a variable sampling frequency to the S/H control input.
+**Procedure – Part D: Continuously Changing Voltages**
+1. Replace the DC source with a Voltage Controlled Oscillator (VCO) to provide a dynamic sinewave input.
+2. Configure the VCO to provide the encoder with a 50kHz clock signal.
+3. Set the oscilloscope timebase to 50µs/div to monitor the resulting PCM data output.
+4. Observe how the binary stream changes in real-time as the analog input fluctuates over time.
 
-**Waveforms Results**
-<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/a0145970-1771-4058-b04f-f42f1c7b8281" />
+**Waveforms Result**
+<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/a6b7139b-6d82-4998-a627-49f0744d7571" />
 
-<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/3b775d00-812f-4097-a013-8ae06cfabd6f" />
-
-<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/f7dfa261-ab91-4934-96f7-7f2408d5a89c" />
-
-<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/fe64918c-945e-4578-8a11-7a3176b5bcda" />
-
-<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/0edf1004-14b0-4050-ac04-628c51a6cef7" />
-
-<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/de441582-4521-4052-90d7-28f3854acb7d" />
+<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/61a240aa-870c-4396-9814-42b4434148e8" />
 
 
 
-https://github.com/user-attachments/assets/54ed6d04-ab21-4dd7-810b-869b987bcb91
+https://github.com/user-attachments/assets/5f48f164-6ba3-416e-9625-1d205a73fbba
 
-
-
-**Learning**
-<p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;This experiment demonstrates that digital communication depends on converting continuous analog signals into discrete samples and back again without loss of information. Through Parts A and B, it was observed that while natural sampling follows the message's voltage changes, the Sample and Hold (S/H) method is more effective for digital systems because it maintains a fixed voltage level for each interval.
-
-&nbsp;&nbsp;&nbsp;&nbsp;The reconstruction process in Part C proved that these discrete samples still contain the original message's frequency; by using a Tuneable Low-pass Filter, the original sinewave can be isolated and recovered from the complex spectral components created during sampling. Finally, Part D highlighted the critical constraint of the Nyquist Criteria: if the sampling frequency (controlled via the VCO) drops below twice the message frequency, aliasing occurs. This creates irreversible distortion in the reconstructed signal, confirming that a sufficiently high sampling rate—exceeding the theoretical minimum to account for real-world filter limitations—is essential for accurate communication.
-</p>
 
 ---
 
@@ -153,13 +134,13 @@ https://github.com/user-attachments/assets/54ed6d04-ab21-4dd7-810b-869b987bcb91
 
 ### Learnings
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The experiment provided a clear look at how analog signals are turned into digital formats through sampling and then back again. It was observed that natural sampling captures the signal voltage as it changes while the sample and hold method keeps the voltage level steady for the duration of the sample. Using a low pass filter proved that an original message can be recovered from a sampled signal because the sampling process naturally preserves the original frequency component among many others. The most important part was seeing what happens when the sampling frequency is lowered too much. This led to aliasing where the reconstructed signal became distorted and did not look like the original message anymore. It was confirmed that the sampling rate must be at least twice the highest frequency of the message to avoid this issue.
+&nbsp;&nbsp;&nbsp;&nbsp;TThe lab work showed that PCM encoding is highly dependent on both the sampling rate and the resolution of quantization levels. It was observed that even with a steady DC input, the output bits can fluctuate if the signal sits right on the edge of two levels. Understanding the role of the Frame Synchronisation signal proved vital for correctly reading the serial data on an oscilloscope. Furthermore, it became clear that the 8-bit limitation of the codec chip defines the precision of the entire system.
 </p>
 
 ---
 
 ### Conclusion
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;This laboratory session demonstrated that digital transmission systems are superior to analog ones because they handle noise and interference much better. By testing both natural and pulse amplitude modulation it was shown that discrete samples contain all the necessary data to rebuild the original analog waveform. The use of a tuneable low pass filter successfully isolated the message frequency from the complex spectral components created during the sampling stage. However the results also proved that the sampling rate is a critical factor in communication. If the rate drops below the Nyquist minimum the signal cannot be reconstructed accurately due to aliasing distortion. Overall the experiment verified the theoretical foundations of digital sampling and reconstruction which are essential for modern telecommunications.
+&nbsp;&nbsp;&nbsp;&nbsp;This experiment demonstrated that PCM encoding is the standard for digitizing analog signals through sampling and quantization. It was found that 8-bit systems provide 256 discrete levels which inherently limits the resolution of the signal. Any discrepancy between the actual sample and the assigned level results in quantization error that cannot be corrected later. The testing showed that the encoder's clock must be at least twice the message frequency to avoid aliasing. In summary, PCM provides a robust transmission method but its fidelity depends heavily on the density of quantization levels and the sampling rate used during the encoding stage.
 </p>
 
