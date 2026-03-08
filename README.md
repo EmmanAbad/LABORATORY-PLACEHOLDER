@@ -18,9 +18,11 @@
 ### Explanations of Experiments:
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;The progression of these experiments illustrates the complete lifecycle of a communication signal.
-
+</p>
+<p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;In the analog phase (Exp 9-10), we see that information is best protected from noise by hiding it in the timing (frequency) of a wave rather than its strength (amplitude). However, for modern computing, signals must be converted into "bits." This requires Sampling (Exp 11), where we take "snapshots" of a wave. To turn these snapshots into data, we use PCM Encoding (Exp 12), which rounds the snapshots to the nearest number (quantization) and sends them as binary code.
-
+</p>
+<p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;The most critical challenge revealed in this series is the Physical Reality of the Channel. No matter how perfect the digital code is, the wires and air it travels through (Exp 14) will always blur and distort the pulses. Therefore, communication is not just about sending data, but about managing Synchronization (Exp 13) and using hardware like filters and comparators to "clean up" the signal at the finish line.
 </p>
 
