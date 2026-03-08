@@ -21,7 +21,7 @@
 * To examine FSK waveforms and their frequency characteristics using an oscilloscope.
 * To implement demodulation through low-pass filtering and envelope detection.
 * To restore the final digital output using a comparator circuit.
-* 
+  
 ---
 
 ### Equipment
