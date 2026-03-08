@@ -62,6 +62,11 @@
 
 <img width="513" height="228" alt="image" src="https://github.com/user-attachments/assets/770c7691-6d5b-414c-b9ec-ad65359859bb" />
 
+**Example Output**
+<img width="557" height="288" alt="image" src="https://github.com/user-attachments/assets/f331b9be-ad8f-49b1-9ca9-820f6ac60b19" />
+<img width="820" height="559" alt="image" src="https://github.com/user-attachments/assets/5663ccb3-33e7-40c0-bd28-138c1a595f69" />
+<details><summary><b>[Reference]</b></summary><br>https://pysdr.org/content/digital_modulation.html<br></details>
+
 **Learning**
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;In this experiment, the process of generating an FSK signal through a Voltage Controlled Oscillator (VCO) demonstrated that digital data can be effectively transmitted by toggling between a high-frequency "Mark" and a lower-frequency "Space" state. The demodulation phase highlighted how a tunable low-pass filter can isolate these specific frequency components, essentially transforming the frequency-shifted signal into a series of amplitude bursts that represent the original data. Finally, the use of a comparator proved essential for signal restoration, as it utilized a reference threshold to convert the smoothed, analog-like transitions from the filter back into a sharp, clean digital square wave.
