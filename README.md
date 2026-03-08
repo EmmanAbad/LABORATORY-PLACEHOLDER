@@ -39,8 +39,8 @@
 </details>
 
 ---
-
-**EXPERIMENT 10: FM Demodulation** 
+<details>
+<summary> EXPERIMENT 10: FM Demodulation <summary>
 
 **INTRODUCTION**
 * Focuses on the "Zero-Crossing Detector" method to recover original messages from FM signals by converting frequency variations into measurable voltage changes.
@@ -48,9 +48,11 @@
 **EXPLANATION**
 * The FM signal is "squared up" using a comparator to trigger a pulse generator. Because the pulses have a fixed width, changing the frequency changes the duty cycle. A low-pass filter then averages these pulses to reconstruct the original wave.
 
----
+</details>
 
-**EXPERIMENT 11: Sampling and Reconstruction**
+---
+<details>
+<summary> EXPERIMENT 11: Sampling and Reconstruction <summary> 
 
 **INTRODUCTION**
 * Investigates the conversion of continuous analog signals into discrete digital formats through regular measurements of voltage.
@@ -58,9 +60,12 @@
 **EXPLANATION**
 * This lab proves the Nyquist Theorem: sampling a signal at least twice as fast as its highest frequency allows for perfect reconstruction. It demonstrates how "Sample and Hold" signals are smoothed back into analog form using filters.
 
+</details>
+
 ---
 
-**EXPERIMENT 12: PCM Encoding** 
+<details>
+<summary> EXPERIMENT 12: PCM Encoding <summary>
 
 **INTRODUCTION**
 * Analyzes the fundamentals of digitizing analog voltages by sampling, quantizing, and converting them into an 8-bit serial binary stream.
@@ -68,9 +73,11 @@
 **EXPLANATION**
 * Each analog sample is compared to 256 quantization levels. The encoder assigns the closest binary number to that voltage. This lab highlights "quantization error"—the loss of detail that occurs when a signal is rounded to the nearest digital level.
 
----
+</details>
 
-**EXPERIMENT 13: PCM Decoding** 
+---
+<details>
+<summary> EXPERIMENT 13: PCM Decoding  <summary>
 
 **INTRODUCTION**
 * Examines the recovery of analog messages from serial binary data, emphasizing the necessity of precise timing between the transmitter and receiver.
@@ -78,15 +85,19 @@
 **EXPLANATION**
 * The decoder reads the 8-bit strings and converts them back into proportional voltages. Without a shared "Clock" and "Frame Sync" signal, the decoder cannot identify where a binary number begins or ends, leading to total signal loss.
 
----
+</details>
 
-**EXPERIMENT 14: Bandwidth Limiting and Restoring Digital Signals** 
+---
+<details>
+<summary> EXPERIMENT 14: Bandwidth Limiting and Restoring Digital Signals <summary>
 
 **INTRODUCTION**
 * Demonstrates how transmission media (wires or fiber) act as filters that distort digital signals by removing their high-frequency harmonics.
 
 **EXPLANATION**
 * When bandwidth is restricted, sharp digital pulses become rounded, causing Inter-Symbol Interference. This experiment shows how a comparator can "square up" these distorted waves to restore clear logic levels for the receiver.
+
+</details>
 
 ---
 
