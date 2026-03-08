@@ -39,12 +39,19 @@
 5. Adjust the scope timebase to 0.1ms/div and use dual mode to view the clock input and FS output simultaneously.
 6. Observe the 10-bit data output to identify the specific bit pattern associated with a zero-volt input.
 
+<img width="342" height="234" alt="image" src="https://github.com/user-attachments/assets/7b0866a8-4064-4e83-bcea-932e7be49644" />
+
+<img width="358" height="244" alt="image" src="https://github.com/user-attachments/assets/a5b8e839-fd7f-4353-b7e4-619a075b42d0" />
+
 **Procedure – Part B: Variable DC Encoding**
 1. Connect a Variable DCV module to the PCM Encoder input.
 2. Establish a zero-volt reference by aligning the Channel 1 trace with a horizontal line on the scope.
 3. Increase the DC voltage by turning the control clockwise until the output reaches the maximum code of 11111111.
 4. Decrease the voltage by turning the control anti-clockwise until the output reaches the minimum code of 00000000.
 5. Measure and record these boundary voltages in Table 1 to determine the encoder's peak-to-peak amplitude capacity.
+
+<img width="340" height="233" alt="image" src="https://github.com/user-attachments/assets/1100d701-5655-4664-9993-75be826f7007" />
+
 
 **Procedure – Part C: Quantisation Analysis**
 1. Set the Variable DC control to approximately the middle of its travel range.
