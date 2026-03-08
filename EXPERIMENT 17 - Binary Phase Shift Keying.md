@@ -1,6 +1,6 @@
 # EXPERIMENT 17 - Binary Phase Shift Keying :page_facing_up: 
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Binary Phase Shift Keying (BPSK) is a digital modulation technique that transmits data by altering the phase angle of a carrier wave rather than its amplitude or frequency. In this method, a logic transition in the digital input causes the carrier to undergo a 180° phase shift, effectively inverting its polarity—for example,
+&nbsp;&nbsp;&nbsp;&nbsp;Binary Phase Shift Keying (BPSK) is a digital modulation technique that transmits data by altering the phase angle of a carrier wave rather than its amplitude or frequency. In this method, a logic transition in the digital input causes the carrier to undergo a 180° phase shift, effectively inverting its polarity. For example, a logic 1 might start at a positive peak while a logic 0 starts at a negative peak. Mathematically, BPSK functions similarly to Double-Sideband Suppressed Carrier (DSBSC) modulation with a bipolar digital message. Because the carrier amplitude remains constant, BPSK offers superior resistance to noise and better error performance compared to techniques like ASK or FSK.
 </p>
 
 <img width="340" height="198" alt="image" src="https://github.com/user-attachments/assets/af552ceb-b6d4-4dc8-955f-a3023d54fc55" />
