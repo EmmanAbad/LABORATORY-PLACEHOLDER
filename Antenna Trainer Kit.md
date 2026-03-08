@@ -35,7 +35,7 @@
 | Category | Antenna Type | Brief Description |
 | :--- | :--- | :--- |
 | **Probes** | <details><summary><b>Detector Antenna</b> (Click to View)</summary><br><img width="425" height="212" alt="image" src="https://github.com/user-attachments/assets/cf4ed17f-db33-47ce-b3c5-a63520e36148" /><br></details> | A compact probe used to measure field strength without significantly disturbing the radiation pattern. |
-| **Simple Dipoles** | <details><summary><b>Simple Dipole ($\lambda/2, \lambda/4, 3\lambda/2$)</b> (Click to View)</summary><br><img width="215" height="606" alt="image" src="https://github.com/user-attachments/assets/798466b5-4b58-4618-b6e5-26c4f5cdb067" /><br></details> | Resonant radiators ranging from monopole types ($\lambda/4$) to harmonic long-wires ($3\lambda/2$) used to study fundamental patterns and lobes. |
+| **Simple Dipoles** | <details><summary><b>Simple Dipole ($\lambda/2, \lambda/4, 3\lambda/2$) </b> (Click to View)</summary><br><img width="215" height="606" alt="image" src="https://github.com/user-attachments/assets/798466b5-4b58-4618-b6e5-26c4f5cdb067" /><br></details> | Resonant radiators ranging from monopole types ($\lambda/4$) to harmonic long-wires ($3\lambda/2$) used to study fundamental patterns and lobes. |
 | | **Folded Dipole ($\lambda/2$)** | A dipole where the conductor is folded back on itself to increase input impedance and bandwidth. |
 | | **Hertz Antenna** | A basic balanced antenna system that operates without relying on ground conduction. |
 | | **Zeppelin (Zepp) Antenna** | An end-fed half-wave antenna historically utilized in airship communications. |
