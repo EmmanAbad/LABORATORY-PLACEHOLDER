@@ -65,7 +65,8 @@
 6. Move the Channel 1 input back to the Master Signals module's 2 kHz SINE output and readjust the scope to view two or three cycles of the original and recovered messages.
 
 **Example Output**
-<img width="1211" height="619" alt="image" src="https://github.com/user-attachments/assets/9e036277-5586-4f9e-8b9c-7fb08be0d5fd" />
+<img width="572" height="538" alt="image" src="https://github.com/user-attachments/assets/d0022298-acc3-4e35-8416-e5b5867e5887" />
+<details><summary><b>[Reference]</b></summary><br>https://www.edn.com/sampling-and-aliasing/#google_vignette<br></details>
 
 **Learning**
 <p align="justify">
