@@ -26,7 +26,7 @@
 ---
 
 <details>
-<summary> EXPERIMENT 9: Frequency Modulation </summary> 
+<summary>EXPERIMENT 9: Frequency Modulation</summary> 
 
 **INTRODUCTION**
 * Explores FM as a robust alternative to amplitude modulation, demonstrating how varying a carrier’s frequency rather than its amplitude provides superior resistance to electrical noise.
@@ -40,7 +40,7 @@
 
 ---
 <details>
-<summary> EXPERIMENT 10: FM Demodulation <summary>
+<summary>EXPERIMENT 10: FM Demodulation</summary>
 
 **INTRODUCTION**
 * Focuses on the "Zero-Crossing Detector" method to recover original messages from FM signals by converting frequency variations into measurable voltage changes.
@@ -52,7 +52,7 @@
 
 ---
 <details>
-<summary> EXPERIMENT 11: Sampling and Reconstruction <summary> 
+<summary>EXPERIMENT 11: Sampling and Reconstruction</summary> 
 
 **INTRODUCTION**
 * Investigates the conversion of continuous analog signals into discrete digital formats through regular measurements of voltage.
@@ -65,7 +65,7 @@
 ---
 
 <details>
-<summary> EXPERIMENT 12: PCM Encoding <summary>
+<summary>EXPERIMENT 12: PCM Encoding</summary>
 
 **INTRODUCTION**
 * Analyzes the fundamentals of digitizing analog voltages by sampling, quantizing, and converting them into an 8-bit serial binary stream.
@@ -77,7 +77,7 @@
 
 ---
 <details>
-<summary> EXPERIMENT 13: PCM Decoding  <summary>
+<summary> EXPERIMENT 13: PCM Decoding</summary>
 
 **INTRODUCTION**
 * Examines the recovery of analog messages from serial binary data, emphasizing the necessity of precise timing between the transmitter and receiver.
@@ -89,7 +89,7 @@
 
 ---
 <details>
-<summary> EXPERIMENT 14: Bandwidth Limiting and Restoring Digital Signals <summary>
+<summary> EXPERIMENT 14: Bandwidth Limiting and Restoring Digital Signals</summary>
 
 **INTRODUCTION**
 * Demonstrates how transmission media (wires or fiber) act as filters that distort digital signals by removing their high-frequency harmonics.
