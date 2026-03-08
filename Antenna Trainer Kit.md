@@ -51,6 +51,11 @@
 | | <details><summary><b>Rhombus Antenna</b></summary><br><img width="291" height="247" alt="image" src="https://github.com/user-attachments/assets/c4c60a0a-26f3-43c5-a04b-8fb8c5ba423d" /><br></details> | A large, diamond-shaped non-resonant wire antenna used for high-frequency, long-distance communication. |
 | | <details><summary><b>Ground Plane Antenna</b></summary><br><img width="343" height="296" alt="image" src="https://github.com/user-attachments/assets/433987e1-4732-4be8-b1b8-70315ec0f93a" /><br></details> | A vertical radiator with radial conductors that simulate an artificial ground surface. |
 
+**Learning**
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;Through the technical exploration of the Antenna Trainer Kit, I learned that efficient wireless communication relies as much on geometric precision as it does on electronic tuning. I discovered that the Matching Stub is a critical intermediary, proving that signal power from the Master Antenna Trainer Unit is only effective when impedance is synchronized to minimize reflections. Using the Transmitting and Receiving Masts taught me that maintaining specific distances is a functional requirement to establish far-field conditions for accurate measurement. Furthermore, testing elements like the Yagi-Uda, Helix, and Slot antennas demonstrated that an antenna acts as a spatial filter, where physical shape and "negative space" are engineered to dictate gain, directionality, and polarization. Ultimately, the use of Phase and Collinear arrays revealed that signal strength can be amplified through constructive interference, highlighting that physical orientation is vital for optimizing modern RF systems.
+</p>
+
 ---
 
 **Procedure – Part A: Far-Field Calibration & Impedance Matching**
@@ -68,13 +73,6 @@
 **Learning**
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;Through the systematic execution of this experiment, I learned that successful FM demodulation using a Zero-Crossing Detector (ZCD) relies on a precise chain of signal transformations. In the initial stages, I discovered the importance of linear modulation, where calibrating the VCO to a specific rest frequency and sensitivity ensures that message amplitudes are accurately mapped to frequency deviations. Setting up the ZCD taught me that the "information" in this specific system is encoded into the duty cycle; by maintaining a strictly fixed pulse width (mark time), the varying frequency of the carrier is forced to change only the "space" between pulses. I observed that the comparator is a critical intermediary that strips away amplitude variations to provide clean digital edges for the ZCD. Finally, through the transmission of sinewaves and speech, I learned that a Low-Pass Filter acts as a crucial integrator that extracts the average DC value of the pulse train, effectively smoothing the high-frequency switching into a continuous, audible, and accurate reconstruction of the original baseband signal.
-</p>
-
----
-
-### Learnings
-<p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;This experiment transformed abstract mathematical concepts into tangible physical phenomena. I observed that an antenna is not just a "wire," but a spatial filter. The most significant takeaway was the impact of parasitic elements; seeing how an unpowered reflector can "push" energy forward through mutual coupling provided a clear understanding of Yagi-Uda mechanics. Additionally, the hands-on use of the matching stub highlighted that raw power is useless without proper impedance synchronization—without it, energy is simply lost as heat or reflections.
 </p>
 
 ---
