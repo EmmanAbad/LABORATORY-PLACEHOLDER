@@ -17,9 +17,6 @@
 
 ### Explanations of Experiments:
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The progression of these experiments illustrates the complete lifecycle of a communication signal.
-</p>
-<p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;In the analog phase (Exp 9-10), we see that information is best protected from noise by hiding it in the timing (frequency) of a wave rather than its strength (amplitude). However, for modern computing, signals must be converted into "bits." This requires Sampling (Exp 11), where we take "snapshots" of a wave. To turn these snapshots into data, we use PCM Encoding (Exp 12), which rounds the snapshots to the nearest number (quantization) and sends them as binary code.
 </p>
 <p align="justify">
