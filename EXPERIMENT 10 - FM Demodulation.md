@@ -90,6 +90,10 @@ https://github.com/user-attachments/assets/927992c0-5f2b-4b20-8345-a7d285fab6b9
 
 
 
+**Learning**
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;Through the systematic execution of this experiment, I learned that successful FM demodulation using a Zero-Crossing Detector (ZCD) relies on a precise chain of signal transformations. In the initial stages, I discovered the importance of linear modulation, where calibrating the VCO to a specific rest frequency and sensitivity ensures that message amplitudes are accurately mapped to frequency deviations. Setting up the ZCD taught me that the "information" in this specific system is encoded into the duty cycle; by maintaining a strictly fixed pulse width (mark time), the varying frequency of the carrier is forced to change only the "space" between pulses. I observed that the comparator is a critical intermediary that strips away amplitude variations to provide clean digital edges for the ZCD. Finally, through the transmission of sinewaves and speech, I learned that a Low-Pass Filter acts as a crucial integrator that extracts the average DC value of the pulse train, effectively smoothing the high-frequency switching into a continuous, audible, and accurate reconstruction of the original baseband signal.
+</p>
 ---
 
 ### Questions and Answers 
