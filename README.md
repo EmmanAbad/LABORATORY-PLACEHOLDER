@@ -2,29 +2,29 @@
 ### Laboratory #4 (Antenna Trainer Kit | Microwave Waveguide Trainer Kit) :page_facing_up: 
 ### Introduction:
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The laboratory utilizes two specialized platforms to explore high-frequency electromagnetic behavior. The Antenna Trainer Kit focuses on the transition of signals from guided mediums to free-space radiation, emphasizing how physical geometry shapes energy distribution. In contrast, the Microwave Waveguide Trainer Kit investigates the containment and propagation of X-band signals within rectangular metallic tubes, where mechanical precision is as vital as electrical tuning.
+&nbsp;&nbsp;&nbsp;&nbsp;Digital modulation is the process of mapping binary data onto an analog carrier wave for transmission across physical media. By altering the amplitude, frequency, or phase of a carrier, information can be sent efficiently over a distance. These experiments demonstrate the "lifecycle" of a digital signal, covering its generation, modulation, transmission through a simulated medium, and final restoration at the receiver.
 </p>
 
 ---
 
 ### Objectives:
-* To experimentally plot two-dimensional radiation patterns using a polar coordinate system.
-* To calculate fundamental parameters such as forward gain, directivity, and front-to-back ratio.
-* To investigate the influence of parasitic elements like reflectors and directors on radiation lobes.
-* To demonstrate the use of matching stubs in minimizing the Standing Wave Ratio (SWR).
-* To observe the effects of cross-polarization on link reliability.
+* Generate various digital modulation signals including ASK, FSK, BPSK, QPSK, and DSSS.
+* Observe and analyze the functional relationship between binary input data and the resulting modulated waveforms.
+* Execute signal demodulation using techniques such as envelope detection, filtering, and product detection.
+* Restore distorted analog signals back into clean digital square waves using comparator circuits.
+* Evaluate system performance against interference, synchronization requirements, and spectral efficiency.
 
 ---
 
-### Explanations of Trainer Kits:
+### Explanations of Experiments:
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The Antenna Trainer Kit and the Microwave Waveguide Trainer Kit provide a comprehensive exploration of high frequency engineering by focusing on both free space radiation and guided wave propagation. The Antenna Trainer Kit allows users to observe how physical geometry and the arrangement of conductive elements dictate the directionality and efficiency of wireless signals through radiation pattern mapping and impedance matching. In contrast, the Microwave Waveguide Trainer Kit utilizes rectangular metallic tubes to demonstrate that microwave transmission is a mechanical discipline where flange precision and component protection are vital for signal containment. By integrating active sources with specialized measurement tools like the slotted line and rotatable masts, these trainers prove that optimizing modern communication systems requires a dual mastery of electrical tuning and geometric accuracy.
+&nbsp;&nbsp;&nbsp;&nbsp;The laboratory series encompasses the end to end lifecycle of digital communication, transitioning from basic amplitude and frequency keying to advanced spread spectrum and software defined radio techniques. By utilizing the Emona Telecoms Trainer 101, the experiments demonstrate how binary data is mapped onto analog carriers through various modulation schemes like ASK, FSK, BPSK, and QPSK, as well as the specialized energy distribution of DSSS. Each session emphasizes the physical challenges of signal transmission, such as bandwidth limitations and noise, while proving that information can be accurately recovered through hardware processes like synchronous detection, filtering, and comparator based reconstruction. Ultimately, the work bridges the gap between traditional hardware receivers and flexible, code based SDR architectures by exploring undersampling and digital signal processing fundamentals.
 </p>
 
 ---
 
 <details>
-<summary>Antenna Trainer Kit</summary> 
+<summary>EXPERIMENT 15 - Amplitude Key Shifting</summary> 
 
 **INTRODUCTION**
 * The Antenna Trainer Kit serves as a bridge between electromagnetic theory and practical RF engineering. It provides a modular environment to observe how the length, shape, and arrangement of conductive elements dictate the efficiency and directionality of wireless communication.
@@ -32,22 +32,97 @@
 **EXPLANATION**
 * The system relies on a Master Antenna Trainer Unit that provides the RF signal source and modulation controls. Key hardware includes the Transmitting Mast, which allows for 360 degree rotation to map signal strength, and the Matching Stub, which is a critical tool used to synchronize impedance and minimize reflections. The kit includes various antenna types, such as Simple Dipoles for fundamental patterns, Yagi-Uda Arrays for high directivity, and specialized geometries like Helix and Slot antennas to study circular polarization and unique radiation characteristics.
 
-<details><summary><b>[View Antenna Trainer Kit Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Novocaine/blob/main/Antenna%20Trainer%20Kit.md<br></details>
+<details><summary><b>[View EXPERIMENT 15 - Amplitude Key Shifting Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Novocaine/blob/main/Antenna%20Trainer%20Kit.md<br></details>
 
 </details>
 
 ---
 
 <details>
-<summary>Microwave Waveguide Trainer Kit</summary>
+<summary>EXPERIMENT 15 - Amplitude Shift Keying</summary> 
 
 **INTRODUCTION**
-* This kit shifts the focus to microwave engineering, where signals propagate through hollow metallic structures rather than traditional copper wires. Using the WR-90 standard, the system explores the generation and measurement of signals within the 8.2 to 12.4 GHz frequency range.
+* Amplitude Shift Keying, often referred to as On-Off Keying (OOK), is a basic digital modulation technique where the binary bitstream controls the carrier amplitude. In this scheme, the carrier is transmitted at full power for a logic high and is completely suppressed for a logic low. This experiment focuses on creating the ASK envelope and using an envelope detector to strip the carrier away for data recovery.
 
 **EXPLANATION**
-* The system is powered by a Gunn Diode Oscillator, which generates coherent X-band signals. Safety and signal integrity are maintained by the Ferrite Isolator, which absorbs reflected power, and the Variable Vane Attenuator, which prevents detector overload. For measurement, a Slotted Line Section allows a movable probe to detect standing wave patterns, while an Absorption Frequency Meter identifies the operating frequency through a sharp signal dip. The assembly is finalized with hardware like Pyramidal Horn Antennas for radiation or Matched Loads for reflectionless termination.
+* The experiment highlights how digital information can be mapped onto an analog carrier for transmission. It provides a practical look at how hardware components like rectifiers and filters act as an envelope detector to recover the message. A key lesson is the necessity of using a comparator to fix signal degradation, as filtering inherently rounds the edges of the digital pulses.
 
-<details><summary><b>[View Microwave Waveguide Trainer Kit Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Novocaine/blob/main/Microwave%20Waveguide%20Trainer%20Kit.md<br></details>
+<details><summary><b>[View EXPERIMENT 15 - Amplitude Shift Keying Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Heretic/blob/main/EXPERIMENT%2015%20-%20Amplitude%20Shift%20Keying.md<br></details>
+
+</details>
+
+---
+
+<details>
+<summary>EXPERIMENT 16 - Frequency Key Shifting</summary> 
+
+**INTRODUCTION**
+* Frequency Shift Keying is a modulation method where the frequency of a carrier wave is varied in accordance with digital binary signals. The system toggles between a "Mark" frequency for logic 1 and a "Space" frequency for logic 0. This experiment explores the FM-based nature of FSK, which provides better noise immunity than amplitude-based methods because the receiver can ignore amplitude fluctuations.
+  
+**EXPLANATION**
+* This laboratory session demonstrated the role of frequency variation in carrying digital information. It successfully showed that complex digital signals can be recovered using relatively simple components like filters and threshold detectors. A major takeaway was the importance of signal conditioning to ensure data integrity, especially in identifying the distinct frequency shifts at the receiver.
+
+<details><summary><b>[View EXPERIMENT 16 - Frequency Key Shifting Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Heretic/blob/main/EXPERIMENT%2016%20-%20Frequency%20Shift%20Keying.md<br></details>
+
+</details>
+
+---
+
+<details>
+<summary>EXPERIMENT 17 - Binary Phase Shift Keying</summary> 
+
+**INTRODUCTION**
+* Binary Phase Shift Keying is a sophisticated modulation scheme where the phase of a constant-amplitude carrier is shifted by 180 degrees to represent binary data. Unlike ASK or FSK, BPSK maintains a constant frequency and amplitude, making it highly robust against noise. The experiment examines the circuitry required to modulate and then demodulate these signals using product detection.
+
+**EXPLANATION**
+* The experiment highlights the efficiency of phase-based communication. It shows that while the carrier frequency and amplitude remain static, the information encoded in the phase shifts provides a resilient way to transmit data. Seeing the rounded output of the low-pass filter taught a practical lesson on how bandwidth limitations affect signal integrity and how a comparator can restore that accuracy.
+
+<details><summary><b>[View EXPERIMENT 17 - Binary Phase Shift Keying Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Heretic/blob/main/EXPERIMENT%2017%20-%20Binary%20Phase%20Shift%20Keying.md<br></details>
+
+</details>
+
+---
+
+<details>
+<summaryEXPERIMENT 18 - Quadrature Phase Shift Keying</summary> 
+
+**INTRODUCTION**
+* Quadrature Phase Shift Keying is an advanced variation of BPSK that transmits two bits per symbol by utilizing four distinct phase states. By employing orthogonal carriers (90 degrees apart), QPSK can transmit at twice the rate of BPSK within the same radio-frequency bandwidth. This experiment explores serial-to-parallel conversion and the summation of orthogonal carriers.
+
+**EXPLANATION**
+* This session illustrated the transition from serial data to a multi-phase modulated signal. The primary takeaway is that QPSK achieves higher data density through orthogonality, allowing two independent signals to occupy the same frequency space. It also highlighted that precise phase synchronization at the receiver is the most critical factor for successfully separating overlapping signals.
+
+<details><summary><b>[View EXPERIMENT 18 - Quadrature Phase Shift Keying Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Heretic/blob/main/EXPERIMENT%2018%20-%20Quadrature%20Phase%20Shift%20Keying.md<br></details>
+
+</details>
+
+---
+
+<details>
+<summary>EXPERIMENT 19 - DSSS Modulation and Demodulation</summary> 
+
+**INTRODUCTION**
+* Direct Sequence Spread Spectrum is a secure modulation technique that replaces a standard carrier with a high-speed pseudo-noise (PN) sequence. This spreads the message energy across a wide frequency spectrum, making the signal look like low-level noise to unauthorized users and providing resistance to jamming. The experiment focuses on the correlation between identical PN codes for data recovery.
+
+**EXPLANATION**
+* The most critical takeaway was the absolute necessity of perfect synchronization. Without an exact matching PN sequence at the receiver, the data remains indistinguishable from background noise. The experiment also provided a practical understanding of how spreading the signal energy makes it resilient against interference, as the despreading process collapses the message while further spreading any jamming signals.
+
+<details><summary><b>[View EXPERIMENT 19 - DSSS Modulation and Demodulation Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Heretic/blob/main/EXPERIMENT%2019%20-%20DSSS%20Modulation%20and%20Demodulation.md<br></details>
+
+</details>
+
+---
+
+<details>
+<summary>EXPERIMENT 20 - Undersampling in SDR</summary> 
+
+**INTRODUCTION**
+* Software Defined Radio (SDR) shifts the decoding process from rigid hardware to flexible software. To handle high-frequency signals without requiring extreme sampling rates, SDR uses "undersampling" or bandpass sampling. This experiment investigates how intentionally causing aliasing can shift a high-frequency carrier down to baseband, allowing for efficient digital processing.
+
+**EXPLANATION**
+* The experiment highlights a shift in traditional sampling perspectives. While standard sampling requires rates exceeding twice the highest frequency, SDR leverages the fact that radio signals are bandwidth-limited. Seeing a 2 kHz signal emerge from a 100 kHz carrier using a lower sampling rate clarified how aliasing can be used as a productive tool rather than just a source of distortion.
+
+<details><summary><b>[View EXPERIMENT 20 - Undersampling in SDR Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Heretic/blob/main/EXPERIMENT%2020%20-%20Undersampling%20in%20SDR.md<br></details>
 
 </details>
 
@@ -55,12 +130,12 @@
 
 ### Learnings: 
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The overall learnings from these experiments emphasize that high frequency engineering is a discipline where mechanical precision is as vital as electrical tuning. Through the use of the Antenna Trainer Kit, it was discovered that antennas act as spatial filters where physical shape, such as length and arrangement, dictates gain and directionality. Simultaneously, the Microwave Waveguide Trainer Kit demonstrated that signals within a guide behave differently than in free space, with the guide wavelength always being larger than the free space wavelength due to internal reflections within the metallic boundaries. A key takeaway across both platforms is that passive components, such as antenna reflectors or waveguide isolators, are indispensable for modifying radiation patterns and protecting sensitive active hardware from reflected power.
+&nbsp;&nbsp;&nbsp;&nbsp;The laboratory sessions provided a practical understanding of how hardware constraints affect digital integrity. A key takeaway is that while modulation and filtering often cause signal rounding and distortion, specialized components like comparators are essential for restoring the sharp transitions required for accurate data reception. Furthermore, the experiments emphasized the critical role of synchronization, especially in DSSS and QPSK, where precise timing and phase alignment are necessary to successfully recover the original message from noise or multiplexed streams.
 </p>
 
 ---
 
 ### Conclusions:
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The laboratory sessions successfully demonstrated that optimizing modern wireless and microwave systems requires a rigorous mastery of both geometric design and system synchronization. The successful mapping of radiation patterns proved that physical alignment and polarization are critical for maintaining link reliability, while the use of frequency meters and matching stubs highlighted the necessity of resonance and impedance matching for efficient power transfer. Ultimately, the experiments demonstrated that whether a signal is being radiated into space or contained within a waveguide, its performance is a direct result of mechanical accuracy and the elimination of signal reflections.
+&nbsp;&nbsp;&nbsp;&nbsp;The successful execution of these experiments validates the theoretical advantages of modern digital modulation. From the simplicity of ASK to the robustness of DSSS and the efficiency of QPSK, the study confirms that digital communication is a balance of managing electromagnetic geometric relationships and hardware limitations. These methodologies remain foundational to the design of resilient wireless networks and secure telecommunication links.
 </p>
