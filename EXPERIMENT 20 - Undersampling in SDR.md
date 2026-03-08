@@ -64,6 +64,9 @@
 5. Calibrate the VCO module's Digital output to exactly 8.333 kHz by adjusting the signal's period to 120 $\mu$s using the formula $P = \frac{1}{f}$.
 6. Move the Channel 1 input back to the Master Signals module's 2 kHz SINE output and readjust the scope to view two or three cycles of the original and recovered messages.
 
+**Example Output**
+<img width="1211" height="619" alt="image" src="https://github.com/user-attachments/assets/9e036277-5586-4f9e-8b9c-7fb08be0d5fd" />
+
 **Learning**
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;The procedural steps reveal that the transition from a high-frequency modulated signal to a reconstructed baseband signal is heavily dependent on the filtering stage. While the sampling process creates the necessary aliases, the Baseband LPF acts as the critical component for isolating the intended message. This workflow emphasizes that successful SDR communication is not just about the sampling rate, but about the precise coordination between the sampling clock and the subsequent filtering hardware.
