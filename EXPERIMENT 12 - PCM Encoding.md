@@ -74,6 +74,12 @@
 https://github.com/user-attachments/assets/5f48f164-6ba3-416e-9625-1d205a73fbba
 
 
+
+**Learning**
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;The experiment involving the Emona Telecoms-Trainer 101 demonstrated that Pulse Code Modulation effectively digitizes analog signals by mapping sampled voltages to specific 8-bit binary codes. Observations of the Frame Synchronisation (FS) signal on the oscilloscope were essential for defining the start of each 10-bit data frame and correctly identifying the bit patterns. When the input was set to 0V DC, the encoder produced a mid-range binary value rather than 00000000, as the minimum code is reserved for the most negative voltage of approximately -2V. The waveforms captured during the variable DC and VCO procedures showed that the binary output fluctuates in real-time to track amplitude changes, though it is subject to quantization error when a sample falls between the system's 256 discrete levels. This error manifests as bit-toggling in the LSB and highlights the trade-off between the number of quantization levels and signal fidelity.
+</p>
+
 ---
 
 ### Questions and Answers 
