@@ -1,25 +1,27 @@
 # EXPERIMENT 16 - Frequency Shift Keying :page_facing_up: 
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Modern telecommunications utilize multiplexing techniques like TDM and FDM to efficiently share limited channel resources among multiple users. Amplitude Shift Keying (ASK) is a specific digital modulation method where the carrier wave's amplitude is switched between a maximum state and a suppressed state based on the binary input. Because the carrier is effectively "switched" on for a logic high (1) and off for a logic low (0), the process is commonly known as On-Off Keying (OOK). This technique allows discrete digital information to be represented by the envelope of a continuous analog signal.
+&nbsp;&nbsp;&nbsp;&nbsp;Frequency Shift Keying (FSK), also referred to as binary frequency shift keying (BFSK), is a digital modulation scheme that utilizes frequency modulation (FM) to transmit digital data within an allocated portion of the radio-frequency spectrum. This technique leverages the inherent noise immunity of FM over AM, as FSK receivers can use a limiter circuit to remove amplitude variations caused by noise without degrading the recovered message. During the modulation process, the FSK signal switches between two distinct frequencies based on the input digital data: a "space frequency," which typically corresponds to logic-0s and is lower than the nominal carrier frequency, and a "mark frequency," which corresponds to logic-1s and is higher than the nominal carrier. While the modulator itself does not output a signal at the carrier frequency, this nominal reference is used to define the shift between the two logic-dependent states.
 </p>
 
-<img width="384" height="220" alt="image" src="https://github.com/user-attachments/assets/8b3ec219-133e-4f26-bb6a-8bcac389f0e4" />
+<img width="342" height="232" alt="image" src="https://github.com/user-attachments/assets/639f66db-323f-4796-ae67-f54a7497cab7" />
+
 
 ---
 
 ### Introduction 
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Digital communication relies on the ability to translate binary data into analog signals for transmission across physical media. This experiment explores Amplitude Shift Keying (ASK), a fundamental modulation technique where the digital bitstream directly controls the amplitude of a high-frequency carrier wave to facilitate data transfer.
+&nbsp;&nbsp;&nbsp;&nbsp;Frequency Shift Keying (FSK) is a fundamental digital modulation scheme where the frequency of a continuous carrier wave is varied in accordance with a digital binary signal. This experiment explores the complete communication lifecycle of an FSK signal—from generation via a Voltage Controlled Oscillator (VCO) to its eventual reconstruction using filtering and comparator circuits.
 </p>
 
 ---
 
 ### Objectives
-* Generate an ASK-modulated signal by interfacing digital data with an analog carrier.
-* Analyze the functional relationship between the binary input and the resulting modulated waveform.
-* Execute signal demodulation using an envelope detector and a comparator for digital restoration.
-* Validate the operational mechanics of On-Off Keying (OOK) in a practical circuit.
-
+* To grasp the core concepts of FSK as a method for digital data modulation.
+* To produce an FSK signal by driving a VCO with a digital sequence.
+* To examine FSK waveforms and their frequency characteristics using an oscilloscope.
+* To implement demodulation through low-pass filtering and envelope detection.
+* To restore the final digital output using a comparator circuit.
+* 
 ---
 
 ### Equipment
@@ -30,79 +32,89 @@
 
 ---
 
-**Procedure – Part A: Generation of an ASK Signal**
-1. Connect the Master Signals 2 kHz digital output to the Sequence Generator clock input.
-2. Feed a 2 kHz sine wave into the Dual Analog Switch to be controlled by the digital sequence.
-3. Use the oscilloscope to compare the digital data against the resulting ASK signal.
-4. Replace the 2 kHz carrier with a 100 kHz signal from the VCO.
-5. Adjust the vertical position to align the digital signal with the carrier envelope.
+**Procedure – Part A: FSK Signal Generation**
+1. Initialize the oscilloscope with DC coupling on both channels and set the trigger to External (HF Reject).
+2. Configure the VCO by setting the Range to LO, the Gain to midpoint, and the Frequency Adjust to approximately one-quarter.
+3. Set the Sequence Generator DIP switches to 00 to produce the baseband digital data.
+4. Wire the modules according to the FSK generation diagram, connecting the digital data to the VCO input.
+5. Activate the trainer and use the oscilloscope to observe how the output frequency shifts in relation to the digital input.
 
-<img width="534" height="285" alt="image" src="https://github.com/user-attachments/assets/8ba069d5-3f0a-470d-bb9c-cb8c19900d9b" />
+<img width="444" height="262" alt="image" src="https://github.com/user-attachments/assets/3bf85b41-a0ca-4f36-a318-fd716f499e91" />
 
-<img width="516" height="254" alt="image" src="https://github.com/user-attachments/assets/5eeee66e-3f49-4e1c-9c85-2909a8b2746c" />
 
-**Procedure – Part B: Demodulation Using an Envelope Detector**
-1. Configure the Tuneable LPF with gain and cut-off controls set fully clockwise.
-2. Insert the Rectifier and Low-pass Filter into the signal path to form an envelope detector.
-3. Compare the recovered waveform with the original digital signal on the oscilloscope.
+**Procedure – Part B: Demodulation via Filtering**
+1. Integrate the Tunable Low-Pass Filter (LPF) into the existing circuit setup.
+2. Adjust the VCO Frequency Control to position 2 and set the LPF Gain and Cut-off controls fully clockwise.
+3. Connect the FSK output to the LPF input as shown in the demodulation block diagram.
+4. Slowly decrease the LPF cut-off frequency to attenuate the higher frequency component of the signal.
+5. Analyze the resulting "burst" waveform on the oscilloscope, comparing the filtered output to the original data.
 
-<img width="455" height="214" alt="image" src="https://github.com/user-attachments/assets/d50e428c-5aa4-47cd-ae44-78076ed291c6" />
+<img width="481" height="239" alt="image" src="https://github.com/user-attachments/assets/8cbcebf4-54fd-4bc6-958d-cd78e528464b" />
 
-**Procedure – Part C: Restoration Using a Comparator**
-1. Connect the filter output to the input of the Comparator module.
-2. Set the Variable DCV to its midpoint to serve as the reference voltage.
-3.  Tune the reference voltage until the comparator output perfectly replicates the original digital timing.
+<img width="402" height="326" alt="image" src="https://github.com/user-attachments/assets/f31128b7-7890-4f78-9cbe-777c71f1ee39" />
 
-<img width="432" height="219" alt="image" src="https://github.com/user-attachments/assets/8f5ee704-3698-4010-8dcc-26d763e32e8e" />
- 
+
+**Procedure – Part C: Digital Signal Restoration**
+1. Incorporate the Comparator module into the circuit, receiving the signal from the envelope detector.
+2. Set the Variable DC reference voltage to the midpoint to establish a switching threshold.
+3. Monitor the comparator’s output on the oscilloscope alongside the original digital source.
+4. Fine-tune the reference voltage until the output displays a stable, sharp digital square wave.
+
+<img width="513" height="228" alt="image" src="https://github.com/user-attachments/assets/770c7691-6d5b-414c-b9ec-ad65359859bb" />
+
 **Learning**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The sequence of procedures demonstrates the transition of a digital signal through an analog medium and its subsequent return to a digital state. In Part A, you learn the fundamental mechanics of On-Off Keying (OOK) by observing how a digital sequence physically gates a carrier wave, ensuring transmission only occurs during logic high states. Part B reveals the practical limitations of analog hardware, as the envelope detector successfully strips the carrier but introduces signal rounding due to the loss of high-frequency harmonics in the low-pass filter. Finally, Part C teaches the necessity of decision-making components in digital systems; the comparator acts as a restorative stage that uses a voltage threshold to convert those rounded, distorted transitions back into the sharp, precise square waves required for accurate data reception.
+&nbsp;&nbsp;&nbsp;&nbsp;In this experiment, the process of generating an FSK signal through a Voltage Controlled Oscillator (VCO) demonstrated that digital data can be effectively transmitted by toggling between a high-frequency "Mark" and a lower-frequency "Space" state. The demodulation phase highlighted how a tunable low-pass filter can isolate these specific frequency components, essentially transforming the frequency-shifted signal into a series of amplitude bursts that represent the original data. Finally, the use of a comparator proved essential for signal restoration, as it utilized a reference threshold to convert the smoothed, analog-like transitions from the filter back into a sharp, clean digital square wave.
 </p>
 
 ---
 
 ### Questions and Answers 
-**Question 1 — What is the relationship between the digital signal and the presence of the carrier in the ASK signal?**
+**Question 1 — What is the name for the VCO output frequency that corresponds with logic-1 in the digital data?**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The carrier is active during logic 1 and completely suppressed during logic 0.
+&nbsp;&nbsp;&nbsp;&nbsp;The frequency representing a logic-high state is formally known as the Mark Frequency.
 </p>
 
-**Question 2 — What is the ASK signal’s voltage when the digital signal is logic 0?**
+**Question 2 — What is the name for the VCO output frequency that corresponds with logic-0 in the digital data?**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The amplitude drops to approximately 0 V, representing an absent carrier.
+&nbsp;&nbsp;&nbsp;&nbsp;The frequency representing a logic-low state is formally known as the Space Frequency.
 </p>
 
-**Question 3 — What feature of the ASK signal indicates that it is an AM signal?**
+**Question 3 — Which of the two frequencies is higher? Explain.**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The carrier's envelope mimics the digital data's shape, showing the amplitude is modulated by the input.
+&nbsp;&nbsp;&nbsp;&nbsp;The Mark Frequency is typically the higher of the two, as the higher control voltage from a logic-1 input increases the oscillation rate of the VCO.
 </p>
 
-**Question 4 — Why is the recovered digital signal not an exact copy of the original signal?**
+**Question 4 — Which of the FSK signal’s two sinewaves does the filter select?**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The low-pass filter removes high-frequency harmonics required for sharp square-wave corners, causing rounded transitions.
+&nbsp;&nbsp;&nbsp;&nbsp;The filter is tuned to isolate the higher frequency (Mark) component, allowing it to pass while blocking the lower frequency.
 </p>
 
-**Question 5 — What component can be used to clean up the recovered digital signal?**
+**Question 5 — What does the filtered FSK signal look like?**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;A comparator circuit is used for restoration.
+&nbsp;&nbsp;&nbsp;&nbsp;It appears as a series of sinusoidal bursts; the signal is prominent when the Mark frequency is active and nearly zero when the Space frequency is active.
 </p>
 
-**Question 6 — How does the comparator convert the slow-rising voltages into sharp transitions?**
+**Question 6 — What component can be used to clean up the recovered digital signal?**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;It triggers a high or low output based on a threshold voltage, instantly switching states when the input crosses that limit.
+&nbsp;&nbsp;&nbsp;&nbsp;A Comparator is utilized to transform the smoothed analog pulses back into sharp digital transitions. that limit.
+</p>
+
+**Question 7 — How does the comparator convert slow-rising voltages into sharp transitions?**
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;By comparing the input to a fixed threshold; the moment the voltage crosses that limit, the output instantly snaps between rail voltages, eliminating gradual edges.
 </p>
 
 ---
 
 ### Learnings
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The experiment highlights how digital information can be successfully mapped onto an analog carrier for transmission. It provides a practical look at how hardware components like rectifiers and filters act as an "envelope detector" to strip away the carrier, while also teaching the necessity of comparators in overcoming the signal degradation inherent in analog filtering.
+&nbsp;&nbsp;&nbsp;&nbsp;This experiment highlighted the role of frequency variation in carrying digital information. It successfully demonstrated that complex digital signals can be recovered using relatively simple analog components like filters and comparators. Key takeaways include the identification of Mark and Space frequencies and the necessity of signal conditioning (restoration) to ensure data integrity at the receiver.
 </p>
 
 ---
 
 ### Conclusion
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;In conclusion, the successful generation and recovery of an ASK signal validate the efficiency of On-Off Keying for digital communication. The process demonstrates that while modulation and filtering can distort signal integrity, specialized restoration circuits like comparators can accurately reconstruct the original data, ensuring reliable digital reception.
+&nbsp;&nbsp;&nbsp;&nbsp;The laboratory session successfully validated the process of Frequency Shift Keying. By utilizing a VCO for modulation and a combination of filtering and threshold detection for demodulation, the original digital sequence was accurately reconstructed. This reinforces the effectiveness of FSK in environments where frequency-based data transmission is more robust than amplitude-based methods.
 </p>
