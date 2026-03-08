@@ -51,7 +51,7 @@
 | | <details><summary><b>Rhombus Antenna</b></summary><br><img width="291" height="247" alt="image" src="https://github.com/user-attachments/assets/c4c60a0a-26f3-43c5-a04b-8fb8c5ba423d" /><br></details> | A large, diamond-shaped non-resonant wire antenna used for high-frequency, long-distance communication. |
 | | <details><summary><b>Ground Plane Antenna</b></summary><br><img width="343" height="296" alt="image" src="https://github.com/user-attachments/assets/433987e1-4732-4be8-b1b8-70315ec0f93a" /><br></details> | A vertical radiator with radial conductors that simulate an artificial ground surface. |
 
-**Learning**
+**Equipment Learning**
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;Through the technical exploration of the Antenna Trainer Kit, I learned that efficient wireless communication relies as much on geometric precision as it does on electronic tuning. I discovered that the Matching Stub is a critical intermediary, proving that signal power from the Master Antenna Trainer Unit is only effective when impedance is synchronized to minimize reflections. Using the Transmitting and Receiving Masts taught me that maintaining specific distances is a functional requirement to establish far-field conditions for accurate measurement. Furthermore, testing elements like the Yagi-Uda, Helix, and Slot antennas demonstrated that an antenna acts as a spatial filter, where physical shape and "negative space" are engineered to dictate gain, directionality, and polarization. Ultimately, the use of Phase and Collinear arrays revealed that signal strength can be amplified through constructive interference, highlighting that physical orientation is vital for optimizing modern RF systems.
 </p>
@@ -72,7 +72,14 @@
 
 **Learning**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Through the systematic execution of this experiment, I learned that successful FM demodulation using a Zero-Crossing Detector (ZCD) relies on a precise chain of signal transformations. In the initial stages, I discovered the importance of linear modulation, where calibrating the VCO to a specific rest frequency and sensitivity ensures that message amplitudes are accurately mapped to frequency deviations. Setting up the ZCD taught me that the "information" in this specific system is encoded into the duty cycle; by maintaining a strictly fixed pulse width (mark time), the varying frequency of the carrier is forced to change only the "space" between pulses. I observed that the comparator is a critical intermediary that strips away amplitude variations to provide clean digital edges for the ZCD. Finally, through the transmission of sinewaves and speech, I learned that a Low-Pass Filter acts as a crucial integrator that extracts the average DC value of the pulse train, effectively smoothing the high-frequency switching into a continuous, audible, and accurate reconstruction of the original baseband signal.
+&nbsp;&nbsp;&nbsp;&nbsp;Through the technical execution of the laboratory procedure, I learned that achieving accurate results requires a systematic balance of electrical and physical calibration. I discovered that the initial impedance matching via the matching stub is a functional necessity to maximize power transfer and minimize transmission reflections. Establishing far-field conditions by maintaining specific mast separation taught me that spatial precision is mandatory for stable signal measurement. Furthermore, the process of radiation pattern mapping in 10° increments revealed that even minor physical rotations significantly shift energy distribution. Finally, the polarization test proved that physical orientation is as critical as frequency tuning, as a 90° misalignment can lead to a drastic loss in link reliability.
+</p>
+
+---
+
+### Learnings
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;This experiment provided a practical visualization of how geometric design dictates electromagnetic behavior. It demonstrated that antennas act as spatial filters, shaping energy in specific directions. A key insight was the role of parasitic elements; although unpowered, they significantly modify the radiation pattern through mutual coupling. Furthermore, the importance of impedance matching was highlighted; without the matching stub, power transfer efficiency is significantly compromised, regardless of the antenna's theoretical gain.
 </p>
 
 ---
