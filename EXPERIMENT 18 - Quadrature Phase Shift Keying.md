@@ -67,6 +67,7 @@
 
 **Example Output**
 <img width="1316" height="296" alt="image" src="https://github.com/user-attachments/assets/80cf9165-d7f9-46e5-94ac-d6b4a80fe58c" />
+<details><summary><b>[Reference]</b></summary><br>https://pysdr.org/content/digital_modulation.html<br></details>
 
 **Learning**
 <p align="justify">
