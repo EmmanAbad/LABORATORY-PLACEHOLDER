@@ -17,12 +17,11 @@
 ---
 
 ### Objectives
-* Implement both natural sampling and sample and hold techniques using the Emona Telecoms-Trainer 101 equipment.
-* Demonstrate the process of message reconstruction by using a tuneable low pass filter to recover a sinewave from a sampled signal.
-* Analyze the spectral composition of sampled signals to understand why a message can be recovered from discrete measurements.
-* Investigate the phenomenon of aliasing and how it distorts the reconstructed signal when the sampling frequency is too low.
-* Determine the theoretical minimum sampling frequency required for a 2kHz sinewave and compare it to actual experimental results.
-* Observe how sampling and reconstruction principles apply to complex audio signals like speech and humming.
+* Investigate the operation of a Pulse Code Modulation (PCM) encoder using the Emona Telecoms-Trainer 101.
+* Observe the conversion of analog message signals into a serial stream of binary digits through the encoding process.
+* Evaluate the impact of quantization levels and the encoder's clock frequency on signal accuracy.
+* Determine the specific voltage range of the 8-bit encoder by identifying the maximum and minimum binary codes.
+* Identify the causes and effects of quantization error during the digitization of analog signals.
 
 ---
 
@@ -90,35 +89,65 @@ https://github.com/user-attachments/assets/54ed6d04-ab21-4dd7-810b-869b987bcb91
 ---
 
 ### Questions and Answers 
-**Question 1 — What type of sampling is shown in Figure 1a?**
+**Question 4 — What is the binary number that the PCM Encoder module is outputting?**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Natural Sampling, because when the sampling switch remains closed for a finite duration, allowing the output to follow the continuous voltage changes of the message signal. Because the switch is active for a specific interval, the resulting pulse tops are curved and directly reflect the original analog shape. The signal then returns to zero between these pulses in coordination with the sampling clock.
+&nbsp;&nbsp;&nbsp;&nbsp;For a 0V DC input, the encoder typically outputs a code representing the mid-point of the range, often 10000000 or similar depending on the codec offset.
 </p>
 
-**Question 2 — What two features of the sampled signal confirm this?**
+**Question 5 — Why does the code change even though the input voltage is steady?**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The first feature is that the tops of the samples are not flat but follow the curve of the original message signal. The second feature is that the signal returns to zero volts between each sample pulse.
+&nbsp;&nbsp;&nbsp;&nbsp;Small noise fluctuations or clock instability can cause the sample to toggle between two adjacent quantization levels.
 </p>
 
-**Question 3 — What two features confirm the sample-and-hold scheme?**
+**Question 6 — Why does the PCM Encoder module output this code for 0V DC and not 00000000?**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The waveform features flat-topped pulses, indicating the signal value is held constant between intervals. Additionally, the signal amplitude remains fixed at the moment of sampling rather than continuously following the input waveform.
+&nbsp;&nbsp;&nbsp;&nbsp;The system maps 00000000 to the most negative voltage (-2V) so 0V must be represented by a mid-range binary value.
 </p>
 
-**Question 4 — What is the name of the distortion observed when the sampling frequency is too low?**
+**Question 7 — What happens to the Variable DC module's output?**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;This distortion is known as aliasing.
+&nbsp;&nbsp;&nbsp;&nbsp;The DC voltage increases as the control is turned clockwise.
 </p>
 
-**Question 5 — For a 2 kHz message, what is the theoretical minimum sampling frequency?**
+**Question 8 — In what way does the binary number change?**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;According to the Nyquist Criteria, the rate must be at least twice the highest frequency, which is 4 kHz.
+&nbsp;&nbsp;&nbsp;&nbsp;The binary value increases towards the maximum 8-bit value of 11111111.
 </p>
 
-**Question 6 — Why is the actual minimum sampling frequency higher than the theoretical minimum?**
+**Question 9 — What happens to the Variable DC module's output?**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Real-world filters do not have an instantaneous "brick wall" cut-off; their attenuation is gradual. A higher sampling rate provides a necessary margin to prevent higher frequency harmonics from bleeding into the reconstructed message.
+&nbsp;&nbsp;&nbsp;&nbsp;The DC voltage decreases as the control is turned anti-clockwise.
 </p>
+
+**Question 10 — What happens to the binary number that the PCM Encoder module is outputting?**
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;The binary output decreases towards the minimum value of 00000000.
+</p>
+
+**Question 11 — Maximum allowable amplitude (peak-to-peak)?**
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;The total range from -2V to +2V results in a 4V peak-to-peak capacity.
+</p>
+
+**Question 12 — Name for the difference between a sampled voltage and its closest level?**
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;This is defined as quantisation error.
+</p>
+
+**Question 13 — Calculate the difference between levels.**
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;Dividing the 4V range by 256 codes gives roughly 15.6mV per level.
+</p>
+
+**Question 14 — To reduce quantization error it is better to have:**
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;More quantisation levels between ±2V.
+</p>
+
+| PCM Encoder's output code | PCM Encoder's input voltage |
+| --- | --- |
+| 11111111 | +2.0V (APPROX) |
+| 00000000 | -2.0V (APPROX) |
 
 ---
 
