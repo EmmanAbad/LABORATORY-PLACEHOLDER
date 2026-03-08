@@ -31,6 +31,26 @@
 * **Receiving Mast**: A fixed support that holds the detector at a constant distance to maintain far-field measurement conditions.
 * **RF Detector**: A rectifier circuit that converts received RF energy into a measurable DC signal.
 
+**Antenna Elements**
+| Category | Antenna Type | Brief Description |
+| :--- | :--- | :--- |
+| **Probes** | **Detector Antenna** | A compact probe used to measure field strength without significantly disturbing the radiation pattern. |
+| **Simple Dipoles** | **Simple Dipole ($\lambda/2, \lambda/4, 3\lambda/2$)** | Resonant radiators ranging from monopole types ($\lambda/4$) to harmonic long-wires ($3\lambda/2$) used to study fundamental patterns and lobes. |
+| | **Folded Dipole ($\lambda/2$)** | A dipole where the conductor is folded back on itself to increase input impedance and bandwidth. |
+| | **Hertz Antenna** | A basic balanced antenna system that operates without relying on ground conduction. |
+| | **Zeppelin (Zepp) Antenna** | An end-fed half-wave antenna historically utilized in airship communications. |
+| **Yagi-Uda Arrays** | **3 & 5-Element Folded Dipole** | Directional arrays consisting of a folded driver, reflector, and directors to concentrate radiation. |
+| | **5 & 7-Element Simple Dipole** | High-directivity arrays using straight dipole drivers to narrow the main beam for point-to-point communication. |
+| **Phased Arrays** | **$\lambda/2$ & $\lambda/4$ Phase Arrays** | Dual-element arrays used to study interference patterns and end-fire radiation based on feed phase. |
+| | **Broadside Array** | Multiple elements fed in phase to generate a radiation lobe perpendicular to the array axis. |
+| | **Combined Collinear Array** | Vertically stacked dipoles designed to increase omnidirectional gain along the horizontal plane. |
+| **Specialized Geometries** | **Slot Antenna ($\lambda/2$)** | A slot cut into a conductive surface that radiates with polarization perpendicular to the slot. |
+| | **Helix Antenna** | A spiral-shaped conductor that produces circular polarization in axial mode. |
+| | **Loop Antenna** | A closed conductor acting as a magnetic dipole to reduce electrical noise. |
+| | **Log Periodic Antenna** | A broadband antenna with scaled elements for consistent performance across a wide frequency range. |
+| | **Rhombus Antenna** | A large, diamond-shaped non-resonant wire antenna used for high-frequency, long-distance communication. |
+| | **Ground Plane Antenna** | A vertical radiator with radial conductors that simulate an artificial ground surface. |
+
 ---
 
 **Procedure – Part A: Far-Field Calibration & Impedance Matching**
