@@ -26,7 +26,7 @@
 ---
 
 <details>
-<summary> **EXPERIMENT 9: Frequency Modulation** </summary> 
+<summary> EXPERIMENT 9: Frequency Modulation </summary> 
 
 **INTRODUCTION**
 * Explores FM as a robust alternative to amplitude modulation, demonstrating how varying a carrier’s frequency rather than its amplitude provides superior resistance to electrical noise.
