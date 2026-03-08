@@ -1,5 +1,5 @@
-# Laboratory-Novocaine
-### Laboratory #4 (Antenna Trainer Kit | Microwave Waveguide Trainer Kit) :page_facing_up: 
+# Laboratory-Heretic
+### Laboratory #3 (Experiment 15-20) :page_facing_up: 
 ### Introduction:
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;Digital modulation is the process of mapping binary data onto an analog carrier wave for transmission across physical media. By altering the amplitude, frequency, or phase of a carrier, information can be sent efficiently over a distance. These experiments demonstrate the "lifecycle" of a digital signal, covering its generation, modulation, transmission through a simulated medium, and final restoration at the receiver.
