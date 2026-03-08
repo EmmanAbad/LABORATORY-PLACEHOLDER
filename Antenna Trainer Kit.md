@@ -25,16 +25,21 @@
 
 ### System Equipment and Antenna Elements
 **Laboratory Hardware**
-* <details><summary><b>Master Antenna Trainer Unit</b></summary><br>: The central control unit providing a regulated RF signal source, modulation controls, and a display for signal strength monitoring. 
-* **Matching Stub**: A transmission-line tuning device used to compensate for reactive components and match antenna impedance to the feeder line.
-* **Transmitting Mast**: A rotatable structure with a 360° angular scale used to adjust and measure the orientation of the transmitting antenna.
-* **Receiving Mast**: A fixed support that holds the detector at a constant distance to maintain far-field measurement conditions.
-* **RF Detector**: A rectifier circuit that converts received RF energy into a measurable DC signal.
+* <details><summary><b>Master Antenna Trainer Unit</b></summary><br><img width="425" height="212" alt="image" src="https://github.com/user-attachments/assets/d7c78fe9-b38f-436c-849f-ffdae922015e" />
+<br></details> : The central control unit providing a regulated RF signal source, modulation controls, and a display for signal strength monitoring. 
+* <details><summary><b>Matching Stub</b></summary><br><img width="215" height="606" alt="image" src="https://github.com/user-attachments/assets/cbce1336-9630-4965-aef2-60c9cf985e9e" />
+<br></details> : A transmission-line tuning device used to compensate for reactive components and match antenna impedance to the feeder line.
+* <details><summary><b>Transmitting Mast</b></summary><br><img width="455" height="555" alt="image" src="https://github.com/user-attachments/assets/92c4d40a-71ac-491e-afea-99075f27b1e0" />
+<br></details> : A rotatable structure with a 360° angular scale used to adjust and measure the orientation of the transmitting antenna.
+* <details><summary><b>Receiving Mast</b></summary><br><img width="459" height="324" alt="image" src="https://github.com/user-attachments/assets/287c344a-82a7-49db-ae6e-1450158b2015" />
+<br></details> : A fixed support that holds the detector at a constant distance to maintain far-field measurement conditions.
+* <details><summary><b>RF Detector</b></summary><br><img width="409" height="512" alt="image" src="https://github.com/user-attachments/assets/e1f2974c-9e8a-4918-9c7f-e40fbb5b59b4" />
+<br></details> : A rectifier circuit that converts received RF energy into a measurable DC signal.
 
 **Antenna Elements**
 | Category | Antenna Type | Brief Description |
 | :--- | :--- | :--- |
-| **Probes** | <details><summary><b>Detector Antenna </b></summary><br><img width="222" height="746" alt="image" src="https://github.com/user-attachments/assets/6c621408-9b8d-441e-85e8-538ac355db5f" /><br></details> | A compact probe used to measure field strength without significantly disturbing the radiation pattern. |
+| **Probes** | <details><summary><b>Detector Antenna</b></summary><br><img width="222" height="746" alt="image" src="https://github.com/user-attachments/assets/6c621408-9b8d-441e-85e8-538ac355db5f" /><br></details> | A compact probe used to measure field strength without significantly disturbing the radiation pattern. |
 | **Simple Dipoles** | <details><summary><b>Simple Dipole (λ/2, λ/4, 3λ/2) </b></summary><br><img width="302" height="121" alt="image" src="https://github.com/user-attachments/assets/f0f0d7e8-863f-49fb-8dbb-97c2ca6af98b" /><img width="347" height="240" alt="image" src="https://github.com/user-attachments/assets/a4badc2a-ee57-4d00-b71e-d1247bc64583" /><img width="335" height="299" alt="image" src="https://github.com/user-attachments/assets/83ec0260-ccae-4dfe-a964-360157e57d78" /><br></details> | Resonant radiators ranging from monopole types ($\lambda/4$) to harmonic long-wires ($3\lambda/2$) used to study fundamental patterns and lobes. |
 | | <details><summary><b>Folded Dipole (λ/2)</b></summary><br><img width="240" height="99" alt="image" src="https://github.com/user-attachments/assets/8a7c0d4b-3f93-402c-b8df-80f30c39ce8f" /><br></details> | A dipole where the conductor is folded back on itself to increase input impedance and bandwidth. |
 | | <details><summary><b>Hertz Antenna</b></summary><br><img width="284" height="120" alt="image" src="https://github.com/user-attachments/assets/c1bee701-3c14-463b-8f08-01eefaf50eb3" /><br></details> | A basic balanced antenna system that operates without relying on ground conduction. |
