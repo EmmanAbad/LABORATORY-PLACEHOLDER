@@ -12,6 +12,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Digital communication relies on the ability to translate binary data into analog signals for transmission across physical media. This experiment explores Amplitude Shift Keying (ASK), a fundamental modulation technique where the digital bitstream directly controls the amplitude of a high-frequency carrier wave to facilitate data transfer.
 </p>
 
+
 ---
 
 ### Objectives
