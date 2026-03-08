@@ -50,7 +50,7 @@
 | | <details><summary><b>Zeppelin (Zepp) Antenna</b> (Click to View)</summary><br>
 
 <br></details> | An end-fed half-wave antenna historically utilized in airship communications. |
-| **Yagi-Uda Arrays** | <details><summary><b>3 & 5-Element Folded Dipole</b> (Click to View)<br><img width="328" height="533" alt="image" src="https://github.com/user-attachments/assets/5648122a-5733-477e-9da4-1ea5734b879c" /> <img width="345" height="322" alt="image" src="https://github.com/user-attachments/assets/a8c36c3a-9d4a-4506-81df-6ddf59c6310c" /><br></details> | Directional arrays consisting of a folded driver, reflector, and directors to concentrate radiation. |
+| **Yagi-Uda Arrays** | <details><summary><b>3 & 5-Element Folded Dipole</b> (Click to View)<br><img width="328" height="533" alt="image" src="https://github.com/user-attachments/assets/5648122a-5733-477e-9da4-1ea5734b879c" /><br></details> | Directional arrays consisting of a folded driver, reflector, and directors to concentrate radiation. |
 | | <details><summary><b>5 & 7-Element Simple Dipole</b> (Click to View)</summary><br>
 
 <br></details> | High-directivity arrays using straight dipole drivers to narrow the main beam for point-to-point communication. |
