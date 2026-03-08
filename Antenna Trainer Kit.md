@@ -26,15 +26,15 @@
 ### System Equipment and Antenna Elements
 **Laboratory Hardware**
 * <details><summary><b>Master Antenna Trainer Unit</b></summary><br><img width="425" height="212" alt="image" src="https://github.com/user-attachments/assets/d7c78fe9-b38f-436c-849f-ffdae922015e" />
-<br></details> : The central control unit providing a regulated RF signal source, modulation controls, and a display for signal strength monitoring. 
+<br></details>: The central control unit providing a regulated RF signal source, modulation controls, and a display for signal strength monitoring. 
 * <details><summary><b>Matching Stub</b></summary><br><img width="215" height="606" alt="image" src="https://github.com/user-attachments/assets/cbce1336-9630-4965-aef2-60c9cf985e9e" />
-<br></details> : A transmission-line tuning device used to compensate for reactive components and match antenna impedance to the feeder line.
+<br></details>: A transmission-line tuning device used to compensate for reactive components and match antenna impedance to the feeder line.
 * <details><summary><b>Transmitting Mast</b></summary><br><img width="455" height="555" alt="image" src="https://github.com/user-attachments/assets/92c4d40a-71ac-491e-afea-99075f27b1e0" />
-<br></details> : A rotatable structure with a 360° angular scale used to adjust and measure the orientation of the transmitting antenna.
+<br></details>: A rotatable structure with a 360° angular scale used to adjust and measure the orientation of the transmitting antenna.
 * <details><summary><b>Receiving Mast</b></summary><br><img width="459" height="324" alt="image" src="https://github.com/user-attachments/assets/287c344a-82a7-49db-ae6e-1450158b2015" />
-<br></details> : A fixed support that holds the detector at a constant distance to maintain far-field measurement conditions.
+<br></details>: A fixed support that holds the detector at a constant distance to maintain far-field measurement conditions.
 * <details><summary><b>RF Detector</b></summary><br><img width="409" height="512" alt="image" src="https://github.com/user-attachments/assets/e1f2974c-9e8a-4918-9c7f-e40fbb5b59b4" />
-<br></details> : A rectifier circuit that converts received RF energy into a measurable DC signal.
+<br></details>: A rectifier circuit that converts received RF energy into a measurable DC signal.
 
 **Antenna Elements**
 | Category | Antenna Type | Brief Description |
