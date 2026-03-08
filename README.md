@@ -37,6 +37,8 @@
 **WAVEFORM RESULT EXAMPLE**
 <img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/5036cfd5-fe86-441b-a349-67f4f0a01356" />
 
+[View Experiment 9 Details] https://github.com/EmmanAbad/LABORATORY-MIDSOMMAR-PLACEHOLDER/blob/main/README.md
+
 </details>
 
 ---
