@@ -59,7 +59,7 @@
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;The sequence of procedures demonstrates the transition of a digital signal through an analog medium and its subsequent return to a digital state. In Part A, you learn the fundamental mechanics of On-Off Keying (OOK) by observing how a digital sequence physically gates a carrier wave, ensuring transmission only occurs during logic high states. Part B reveals the practical limitations of analog hardware, as the envelope detector successfully strips the carrier but introduces signal rounding due to the loss of high-frequency harmonics in the low-pass filter. Finally, Part C teaches the necessity of decision-making components in digital systems; the comparator acts as a restorative stage that uses a voltage threshold to convert those rounded, distorted transitions back into the sharp, precise square waves required for accurate data reception.
 </p
-  
+
 ---
 
 ### Questions and Answers 
