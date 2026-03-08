@@ -52,7 +52,7 @@
 | Components due to DC | Components due to fs | Components due to 2fs | Components due to 3fs |
 | :--- | :--- | :--- | :--- |
 | 98k & 102k | Diff: 48k & 52k | Diff: 198k & 202k | Diff: 348k & 352k |
-| | Sum: 248k & 252k | Sum: 398k & 402k | Sum: 548k & 552k |
+| 98k & 102k | Sum: 248k & 252k | Sum: 398k & 402k | Sum: 548k & 552k |
 
 <img width="524" height="349" alt="image" src="https://github.com/user-attachments/assets/66b0c15b-50b0-4615-88bb-d5f3845922a6" />
 
