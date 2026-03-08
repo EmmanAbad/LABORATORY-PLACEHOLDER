@@ -67,6 +67,12 @@
 
 <img width="485" height="232" alt="image" src="https://github.com/user-attachments/assets/bd372278-7889-498c-8bce-f22965e27857" />
 
+**Example Output**
+<img width="3143" height="884" alt="image" src="https://github.com/user-attachments/assets/afea55f5-9691-41c8-888c-0fd606e092bc" />
+
+<img width="2935" height="1531" alt="image" src="https://github.com/user-attachments/assets/7316fde6-0444-4b4f-bdbc-28a06ba291b7" />
+
+
 **Learning**
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;The procedural flow of this experiment highlights the transition from basic signal theory to complex system resilience. By starting with a simple sine wave, one can clearly visualize the phase reversals that define the modulation. Moving into speech and jamming scenarios demonstrates the real-world utility of the hardware. This proves that the mathematical concept of correlation translates into a physical ability to reject noise. The step-by-step verification, from generation to despreading, reinforces that the effectiveness of DSSS lies entirely in the synchronized timing of the PN sequence.
