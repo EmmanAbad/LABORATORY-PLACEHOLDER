@@ -29,12 +29,12 @@
 
 **INTRODUCTION**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Explores FM as a robust alternative to amplitude modulation, demonstrating how varying a carrier’s frequency rather than its amplitude provides superior resistance to electrical noise.
+&nbsp;&nbsp;&nbsp;&nbsp;* Explores FM as a robust alternative to amplitude modulation, demonstrating how varying a carrier’s frequency rather than its amplitude provides superior resistance to electrical noise.
 </p>
 
 **EXPLANATION**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;By using a Voltage Controlled Oscillator (VCO), an analog message is used to shift the carrier frequency. The amount of "swing" depends on the message's amplitude, while the speed of that swing depends on the message's frequency.
+&nbsp;&nbsp;&nbsp;&nbsp;* By using a Voltage Controlled Oscillator (VCO), an analog message is used to shift the carrier frequency. The amount of "swing" depends on the message's amplitude, while the speed of that swing depends on the message's frequency.
 </p>
 
 ---
@@ -43,12 +43,12 @@
 
 **INTRODUCTION**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Focuses on the "Zero-Crossing Detector" method to recover original messages from FM signals by converting frequency variations into measurable voltage changes.
+&nbsp;&nbsp;&nbsp;&nbsp;* Focuses on the "Zero-Crossing Detector" method to recover original messages from FM signals by converting frequency variations into measurable voltage changes.
 </p>
 
 **EXPLANATION**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The FM signal is "squared up" using a comparator to trigger a pulse generator. Because the pulses have a fixed width, changing the frequency changes the duty cycle. A low-pass filter then averages these pulses to reconstruct the original wave.
+&nbsp;&nbsp;&nbsp;&nbsp;* The FM signal is "squared up" using a comparator to trigger a pulse generator. Because the pulses have a fixed width, changing the frequency changes the duty cycle. A low-pass filter then averages these pulses to reconstruct the original wave.
 </p>
 
 ---
@@ -57,12 +57,12 @@
 
 **INTRODUCTION**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Investigates the conversion of continuous analog signals into discrete digital formats through regular measurements of voltage.
+&nbsp;&nbsp;&nbsp;&nbsp;* Investigates the conversion of continuous analog signals into discrete digital formats through regular measurements of voltage.
 </p>
 
 **EXPLANATION**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;This lab proves the Nyquist Theorem: sampling a signal at least twice as fast as its highest frequency allows for perfect reconstruction. It demonstrates how "Sample and Hold" signals are smoothed back into analog form using filters.
+&nbsp;&nbsp;&nbsp;&nbsp;* This lab proves the Nyquist Theorem: sampling a signal at least twice as fast as its highest frequency allows for perfect reconstruction. It demonstrates how "Sample and Hold" signals are smoothed back into analog form using filters.
 </p>
 
 ---
@@ -71,12 +71,12 @@
 
 **INTRODUCTION**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Analyzes the fundamentals of digitizing analog voltages by sampling, quantizing, and converting them into an 8-bit serial binary stream.
+&nbsp;&nbsp;&nbsp;&nbsp;* Analyzes the fundamentals of digitizing analog voltages by sampling, quantizing, and converting them into an 8-bit serial binary stream.
 </p>
 
 **EXPLANATION**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Each analog sample is compared to 256 quantization levels. The encoder assigns the closest binary number to that voltage. This lab highlights "quantization error"—the loss of detail that occurs when a signal is rounded to the nearest digital level.
+&nbsp;&nbsp;&nbsp;&nbsp;* Each analog sample is compared to 256 quantization levels. The encoder assigns the closest binary number to that voltage. This lab highlights "quantization error"—the loss of detail that occurs when a signal is rounded to the nearest digital level.
 </p>
 
 ---
@@ -85,12 +85,12 @@
 
 **INTRODUCTION**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Examines the recovery of analog messages from serial binary data, emphasizing the necessity of precise timing between the transmitter and receiver.
+&nbsp;&nbsp;&nbsp;&nbsp;* Examines the recovery of analog messages from serial binary data, emphasizing the necessity of precise timing between the transmitter and receiver.
 </p>
 
 **EXPLANATION**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The decoder reads the 8-bit strings and converts them back into proportional voltages. Without a shared "Clock" and "Frame Sync" signal, the decoder cannot identify where a binary number begins or ends, leading to total signal loss.
+&nbsp;&nbsp;&nbsp;&nbsp;* The decoder reads the 8-bit strings and converts them back into proportional voltages. Without a shared "Clock" and "Frame Sync" signal, the decoder cannot identify where a binary number begins or ends, leading to total signal loss.
 </p>
 
 ---
@@ -99,12 +99,12 @@
 
 **INTRODUCTION**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Demonstrates how transmission media (wires or fiber) act as filters that distort digital signals by removing their high-frequency harmonics.
+&nbsp;&nbsp;&nbsp;&nbsp;* Demonstrates how transmission media (wires or fiber) act as filters that distort digital signals by removing their high-frequency harmonics.
 </p>
 
 **EXPLANATION**
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;When bandwidth is restricted, sharp digital pulses become rounded, causing Inter-Symbol Interference. This experiment shows how a comparator can "square up" these distorted waves to restore clear logic levels for the receiver.
+&nbsp;&nbsp;&nbsp;&nbsp;* When bandwidth is restricted, sharp digital pulses become rounded, causing Inter-Symbol Interference. This experiment shows how a comparator can "square up" these distorted waves to restore clear logic levels for the receiver.
 </p>
 
 ---
