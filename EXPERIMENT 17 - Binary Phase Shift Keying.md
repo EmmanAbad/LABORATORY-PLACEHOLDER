@@ -58,6 +58,11 @@
 
 <img width="476" height="226" alt="image" src="https://github.com/user-attachments/assets/a9cbe209-cf45-4078-a96e-4ea78533c9d9" />
 
+**Example Output**
+<img width="550" height="173" alt="image" src="https://github.com/user-attachments/assets/88abea36-929d-4f19-a8b6-0aae4935cd75" />
+<img width="960" height="96" alt="image" src="https://github.com/user-attachments/assets/fc5153ad-c22f-4640-9d85-4b1c93261b3d" />
+<details><summary><b>[Reference]</b></summary><br>https://www.mdpi.com/2313-7673/9/2/103<br></details>
+
 **Learning**
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;The procedural workflow of this experiment illustrates the "lifecycle" of a digital signal in a telecommunications system. By moving from generation to modulation, then through a simulated "receiver" (the product detector), and finally to a restoration stage, the procedure clarifies that communication requires managing distortions introduced by hardware limits. The step-by-step transition from a pure sine wave to a phase-inverted wave and back to a clean square wave reinforces how each component—from the multiplier to the comparator—is vital for maintaining data fidelity.
