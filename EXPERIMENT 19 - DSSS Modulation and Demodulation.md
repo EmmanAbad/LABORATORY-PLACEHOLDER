@@ -69,9 +69,8 @@
 
 **Example Output**
 <img width="3143" height="884" alt="image" src="https://github.com/user-attachments/assets/afea55f5-9691-41c8-888c-0fd606e092bc" />
-
 <img width="2935" height="1531" alt="image" src="https://github.com/user-attachments/assets/7316fde6-0444-4b4f-bdbc-28a06ba291b7" />
-
+<details><summary><b>[Reference]</b></summary><br>https://www.mdpi.com/2313-7673/9/2/103<br></details>
 
 **Learning**
 <p align="justify">
