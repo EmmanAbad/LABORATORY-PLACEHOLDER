@@ -70,11 +70,6 @@
 **Procedure – Part C: Comparative Array Testing**
 1. Replace the simple dipole with a 7-element Yagi-Uda array and repeat the 360° rotation to observe the narrowing of the beam and the increase in forward gain.
 
-**Learning**
-<p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Through the technical execution of the laboratory procedure, I learned that achieving accurate results requires a systematic balance of electrical and physical calibration. I discovered that the initial impedance matching via the matching stub is a functional necessity to maximize power transfer and minimize transmission reflections. Establishing far-field conditions by maintaining specific mast separation taught me that spatial precision is mandatory for stable signal measurement. Furthermore, the process of radiation pattern mapping in 10° increments revealed that even minor physical rotations significantly shift energy distribution. Finally, the polarization test proved that physical orientation is as critical as frequency tuning, as a 90° misalignment can lead to a drastic loss in link reliability.
-</p>
-
 ---
 
 ### Learnings
