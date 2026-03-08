@@ -35,6 +35,7 @@
 * By using a Voltage Controlled Oscillator (VCO), an analog message is used to shift the carrier frequency. The amount of "swing" depends on the message's amplitude, while the speed of that swing depends on the message's frequency.
 
 **WAVEFORM RESULT EXAMPLE**
+<img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/5036cfd5-fe86-441b-a349-67f4f0a01356" />
 
 </details>
 
@@ -48,6 +49,9 @@
 **EXPLANATION**
 * The FM signal is "squared up" using a comparator to trigger a pulse generator. Because the pulses have a fixed width, changing the frequency changes the duty cycle. A low-pass filter then averages these pulses to reconstruct the original wave.
 
+**WAVEFORM RESULT EXAMPLE**
+<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/6340d6e7-e303-482f-8ae8-b14866ee548d" />
+
 </details>
 
 ---
@@ -59,6 +63,9 @@
 
 **EXPLANATION**
 * This lab proves the Nyquist Theorem: sampling a signal at least twice as fast as its highest frequency allows for perfect reconstruction. It demonstrates how "Sample and Hold" signals are smoothed back into analog form using filters.
+
+**WAVEFORM RESULT EXAMPLE**
+<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/b1f7f952-b649-4da2-abf4-1bf4244fef30" />
 
 </details>
 
@@ -73,6 +80,9 @@
 **EXPLANATION**
 * Each analog sample is compared to 256 quantization levels. The encoder assigns the closest binary number to that voltage. This lab highlights "quantization error"—the loss of detail that occurs when a signal is rounded to the nearest digital level.
 
+**WAVEFORM RESULT EXAMPLE**
+<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/37576e84-703d-44fb-aaea-a33d1d5e8f2b" />
+
 </details>
 
 ---
@@ -85,6 +95,10 @@
 **EXPLANATION**
 * The decoder reads the 8-bit strings and converts them back into proportional voltages. Without a shared "Clock" and "Frame Sync" signal, the decoder cannot identify where a binary number begins or ends, leading to total signal loss.
 
+**WAVEFORM RESULT EXAMPLE**
+<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/89388987-1215-42f8-a758-497f3475f52e" />
+
+
 </details>
 
 ---
@@ -96,6 +110,9 @@
 
 **EXPLANATION**
 * When bandwidth is restricted, sharp digital pulses become rounded, causing Inter-Symbol Interference. This experiment shows how a comparator can "square up" these distorted waves to restore clear logic levels for the receiver.
+
+**WAVEFORM RESULT EXAMPLE**
+![Uploading image.png…]()
 
 </details>
 
