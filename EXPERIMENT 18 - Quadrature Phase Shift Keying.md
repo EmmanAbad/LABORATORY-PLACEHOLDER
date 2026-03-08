@@ -65,6 +65,9 @@
 
 <img width="485" height="265" alt="image" src="https://github.com/user-attachments/assets/96788f27-57da-441c-b436-8ad02cfeb1d9" />
 
+**Example Output**
+<img width="1316" height="296" alt="image" src="https://github.com/user-attachments/assets/80cf9165-d7f9-46e5-94ac-d6b4a80fe58c" />
+
 **Learning**
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;The procedural flow of this experiment provides a practical roadmap for understanding signal multiplexing in the time and phase domains. By physically connecting modules to split data (Part A), combine waveforms (Part B), and then selectively filter them (Part C), the user learns that digital communication is not just about sending bits, but about managing the geometric relationships of electromagnetic waves. The hands-on adjustment of phase shifts demonstrates that "tuning" in digital systems is a precise mathematical alignment required to successfully disentangle multiplexed data streams.
