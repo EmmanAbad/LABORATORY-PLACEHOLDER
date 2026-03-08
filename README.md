@@ -24,21 +24,6 @@
 ---
 
 <details>
-<summary>EXPERIMENT 15 - Amplitude Key Shifting</summary> 
-
-**INTRODUCTION**
-* The Antenna Trainer Kit serves as a bridge between electromagnetic theory and practical RF engineering. It provides a modular environment to observe how the length, shape, and arrangement of conductive elements dictate the efficiency and directionality of wireless communication.
-
-**EXPLANATION**
-* The system relies on a Master Antenna Trainer Unit that provides the RF signal source and modulation controls. Key hardware includes the Transmitting Mast, which allows for 360 degree rotation to map signal strength, and the Matching Stub, which is a critical tool used to synchronize impedance and minimize reflections. The kit includes various antenna types, such as Simple Dipoles for fundamental patterns, Yagi-Uda Arrays for high directivity, and specialized geometries like Helix and Slot antennas to study circular polarization and unique radiation characteristics.
-
-<details><summary><b>[View EXPERIMENT 15 - Amplitude Key Shifting Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Novocaine/blob/main/Antenna%20Trainer%20Kit.md<br></details>
-
-</details>
-
----
-
-<details>
 <summary>EXPERIMENT 15 - Amplitude Shift Keying</summary> 
 
 **INTRODUCTION**
