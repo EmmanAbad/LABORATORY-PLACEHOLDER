@@ -34,57 +34,22 @@
 **Antenna Elements**
 | Category | Antenna Type | Brief Description |
 | :--- | :--- | :--- |
-| **Probes** | <details><summary><b>Detector Antenna</b> (Click to View)</summary><br><img width="222" height="746" alt="image" src="https://github.com/user-attachments/assets/6c621408-9b8d-441e-85e8-538ac355db5f" />
-
-
-<br></details> | A compact probe used to measure field strength without significantly disturbing the radiation pattern. |
-| **Simple Dipoles** | <details><summary><b>Simple Dipole (λ/2, λ/4, 3λ/2) </b> (Click to View)<br>
-
-<br></details> | Resonant radiators ranging from monopole types ($\lambda/4$) to harmonic long-wires ($3\lambda/2$) used to study fundamental patterns and lobes. |
-| | <details><summary><b>Folded Dipole (λ/2)</b> (Click to View)</summary><br>
-
-<br></details> | A dipole where the conductor is folded back on itself to increase input impedance and bandwidth. |
-| | <details><summary><b>Hertz Antenna</b> (Click to View)</summary><br>
-
-<br></details> | A basic balanced antenna system that operates without relying on ground conduction. |
-| | <details><summary><b>Zeppelin (Zepp) Antenna</b> (Click to View)</summary><br>
-
-<br></details> | An end-fed half-wave antenna historically utilized in airship communications. |
-| **Yagi-Uda Arrays** | <details><summary><b>3 & 5-Element Folded Dipole</b> (Click to View)</summary><br><img width="328" height="533" alt="image" src="https://github.com/user-attachments/assets/5648122a-5733-477e-9da4-1ea5734b879c" /><img width="350" height="501" alt="image" src="https://github.com/user-attachments/assets/c2795d8e-1eb3-4217-abbe-3eae89f77326" />
-<br></details> | Directional arrays consisting of a folded driver, reflector, and directors to concentrate radiation. |
-| | <details><summary><b>5 & 7-Element Simple Dipole</b> (Click to View)</summary><br>
-
-<br></details> | High-directivity arrays using straight dipole drivers to narrow the main beam for point-to-point communication. |
-| **Phased Arrays** | <details><summary><b>λ/2 & λ/4 Phase Arrays</b> (Click to View)</summary><br>
-
-
-<br></details> | Dual-element arrays used to study interference patterns and end-fire radiation based on feed phase. |
-| | <details><summary><b>Broadside Array</b> (Click to View)</summary><br>
-
-<br></details> | Multiple elements fed in phase to generate a radiation lobe perpendicular to the array axis. |
-| | <details><summary><b>Combined Collinear Array</b> (Click to View)</summary><br>
-
-<br></details> | Vertically stacked dipoles designed to increase omnidirectional gain along the horizontal plane. |
-| **Specialized Geometries** | <details><summary><b>Slot Antenna (λ/2)</b> (Click to View)</summary><br><img width="270" height="125" alt="image" src="https://github.com/user-attachments/assets/34ba4e72-6289-46cb-a2bd-f515d1515805" />
-
-
-<br></details> | A slot cut into a conductive surface that radiates with polarization perpendicular to the slot. |
-| | <details><summary><b>Helix Antenna</b> (Click to View)</summary><br><img width="326" height="352" alt="image" src="https://github.com/user-attachments/assets/b72501a3-6666-49ec-8723-00bda752bc8c" />
-
-
-<br></details> | A spiral-shaped conductor that produces circular polarization in axial mode. |
-| | <details><summary><b>Loop Antenna</b> (Click to View)</summary><br>
-
-<br></details> | A closed conductor acting as a magnetic dipole to reduce electrical noise. |
-| | <details><summary><b>Log Periodic Antenna</b> (Click to View)</summary><br>
-
-<br></details> | A broadband antenna with scaled elements for consistent performance across a wide frequency range. |
-| | <details><summary><b>Rhombus Antenna</b> (Click to View)</summary><br>
-
-<br></details> | A large, diamond-shaped non-resonant wire antenna used for high-frequency, long-distance communication. |
-| | <details><summary><b>Ground Plane Antenna</b> (Click to View)</summary><br>
-
-<br></details> | A vertical radiator with radial conductors that simulate an artificial ground surface. |
+| **Probes** | <details><summary><b>Detector Antenna</b> (Click to View)</summary><br><img width="222" height="746" alt="image" src="https://github.com/user-attachments/assets/6c621408-9b8d-441e-85e8-538ac355db5f" /><br></details> | A compact probe used to measure field strength without significantly disturbing the radiation pattern. |
+| **Simple Dipoles** | <details><summary><b>Simple Dipole (λ/2, λ/4, 3λ/2) </b> (Click to View)<br><img width="302" height="121" alt="image" src="https://github.com/user-attachments/assets/f0f0d7e8-863f-49fb-8dbb-97c2ca6af98b" /><img width="347" height="240" alt="image" src="https://github.com/user-attachments/assets/a4badc2a-ee57-4d00-b71e-d1247bc64583" /><img width="335" height="299" alt="image" src="https://github.com/user-attachments/assets/83ec0260-ccae-4dfe-a964-360157e57d78" /><br></details> | Resonant radiators ranging from monopole types ($\lambda/4$) to harmonic long-wires ($3\lambda/2$) used to study fundamental patterns and lobes. |
+| | <details><summary><b>Folded Dipole (λ/2)</b> (Click to View)</summary><br><img width="240" height="99" alt="image" src="https://github.com/user-attachments/assets/8a7c0d4b-3f93-402c-b8df-80f30c39ce8f" /><br></details> | A dipole where the conductor is folded back on itself to increase input impedance and bandwidth. |
+| | <details><summary><b>Hertz Antenna</b> (Click to View)</summary><br><img width="284" height="120" alt="image" src="https://github.com/user-attachments/assets/c1bee701-3c14-463b-8f08-01eefaf50eb3" /><br></details> | A basic balanced antenna system that operates without relying on ground conduction. |
+| | <details><summary><b>Zeppelin (Zepp) Antenna</b> (Click to View)</summary><br><img width="305" height="88" alt="image" src="https://github.com/user-attachments/assets/b8331570-9c3e-4f05-9b0b-63247f8b397d" /><br></details> | An end-fed half-wave antenna historically utilized in airship communications. |
+| **Yagi-Uda Arrays** | <details><summary><b>3 & 5-Element Folded Dipole</b> (Click to View)</summary><br><img width="328" height="533" alt="image" src="https://github.com/user-attachments/assets/5648122a-5733-477e-9da4-1ea5734b879c" /><img width="350" height="501" alt="image" src="https://github.com/user-attachments/assets/c2795d8e-1eb3-4217-abbe-3eae89f77326" /><br></details> | Directional arrays consisting of a folded driver, reflector, and directors to concentrate radiation. |
+| | <details><summary><b>7-Element Simple Dipole</b> (Click to View)</summary><br><img width="332" height="592" alt="image" src="https://github.com/user-attachments/assets/8f269415-4c48-47fb-9ff4-dcd0fd6d7d7e" /><br></details> | High-directivity arrays using straight dipole drivers to narrow the main beam for point-to-point communication. |
+| **Phased Arrays** | <details><summary><b>λ/2 & λ/4 Phase Arrays</b> (Click to View)</summary><br><img width="279" height="244" alt="image" src="https://github.com/user-attachments/assets/7db37fc5-591c-4506-b3aa-6d422f403d12" /><img width="296" height="515" alt="image" src="https://github.com/user-attachments/assets/95b8903b-8aca-421e-a308-e00c7d91c4e8" /><br></details> | Dual-element arrays used to study interference patterns and end-fire radiation based on feed phase. |
+| | <details><summary><b>Broadside Array</b> (Click to View)</summary><br><img width="343" height="227" alt="image" src="https://github.com/user-attachments/assets/7d7135d7-8ff9-46df-802b-024e84052f3e" /><br></details> | Multiple elements fed in phase to generate a radiation lobe perpendicular to the array axis. |
+| | <details><summary><b>Combined Collinear Array</b> (Click to View)</summary><br><img width="297" height="497" alt="image" src="https://github.com/user-attachments/assets/e7c0b3a5-af85-43e0-9a3f-1ea85416ac9e" /><br></details> | Vertically stacked dipoles designed to increase omnidirectional gain along the horizontal plane. |
+| **Specialized Geometries** | <details><summary><b>Slot Antenna (λ/2)</b> (Click to View)</summary><br><img width="270" height="125" alt="image" src="https://github.com/user-attachments/assets/34ba4e72-6289-46cb-a2bd-f515d1515805" /><br></details> | A slot cut into a conductive surface that radiates with polarization perpendicular to the slot. |
+| | <details><summary><b>Helix Antenna</b> (Click to View)</summary><br><img width="326" height="352" alt="image" src="https://github.com/user-attachments/assets/b72501a3-6666-49ec-8723-00bda752bc8c" /><br></details> | A spiral-shaped conductor that produces circular polarization in axial mode. |
+| | <details><summary><b>Loop Antenna</b> (Click to View)</summary><br><img width="329" height="306" alt="image" src="https://github.com/user-attachments/assets/55ad3cd6-2967-479f-b21b-ea1856e228de" /><br></details> | A closed conductor acting as a magnetic dipole to reduce electrical noise. |
+| | <details><summary><b>Log Periodic Antenna</b> (Click to View)</summary><br><img width="338" height="679" alt="image" src="https://github.com/user-attachments/assets/f8cfc26c-1db7-4d45-b04d-050d81728179" /><br></details> | A broadband antenna with scaled elements for consistent performance across a wide frequency range. |
+| | <details><summary><b>Rhombus Antenna</b> (Click to View)</summary><br><img width="291" height="247" alt="image" src="https://github.com/user-attachments/assets/c4c60a0a-26f3-43c5-a04b-8fb8c5ba423d" /><br></details> | A large, diamond-shaped non-resonant wire antenna used for high-frequency, long-distance communication. |
+| | <details><summary><b>Ground Plane Antenna</b> (Click to View)</summary><br><img width="343" height="296" alt="image" src="https://github.com/user-attachments/assets/433987e1-4732-4be8-b1b8-70315ec0f93a" /><br></details> | A vertical radiator with radial conductors that simulate an artificial ground surface. |
 
 ---
 
