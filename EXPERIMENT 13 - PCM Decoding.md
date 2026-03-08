@@ -74,6 +74,11 @@
 **Waveform Result**
 <img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/4430e6ac-ee57-4477-9556-51deb46ee0c9" />
 
+**Learning**
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;The experiment across Parts A through D demonstrates the complete lifecycle of a Pulse Code Modulation (PCM) signal, from digital encoding to analog reconstruction. In Part A, we learned that converting a message into PCM requires a precise $100\text{ kHz}$ digital clock and produces a unique serial binary stream that changes in real-time as the input voltage varies. Part B highlighted the absolute necessity of synchronization; the decoder cannot function without "stealing" the encoder's clock and frame synchronization ($FS$) signals to correctly interpret the data frames. When successfully decoded, the resulting raw signal is a "stepped" Pulse Amplitude Modulation (PAM) waveform, which we observed as a series of held voltage levels. Part C and Part D proved that while complex signals like speech can be digitized, the raw "stepped" output sounds distorted until it is processed. By passing this signal through a Tuneable Low-pass Filter, we successfully smoothed the transitions, removing high-frequency switching noise to reconstruct a clean analog message that visually and audibly resembles the original.
+</p>
+
 ---
 
 ### Questions and Answers 
