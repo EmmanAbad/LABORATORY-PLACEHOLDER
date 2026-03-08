@@ -72,6 +72,10 @@ https://github.com/user-attachments/assets/7c2c40b0-01ee-491c-8903-e9677b7f857c
 
 
 
+**Learning**
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;The experimental procedures demonstrate that a digital signal is a complex waveform composed of a fundamental frequency and multiple high-frequency harmonics. Through Part A and Part B, it was learned that when a channel’s bandwidth is restricted using a low-pass filter, these essential harmonics are attenuated or lost, and the remaining components undergo phase shifting. This results in a visible rounding and distortion of the digital pulses on the oscilloscope, making it difficult for receiver modules like the PCM decoder to accurately identify logic levels and leading to noisy or incorrect data recovery. Part B specifically highlighted that increasing a signal's bit-rate has the same detrimental effect as reducing the channel's bandwidth, as both actions degrade the signal's shape relative to the available frequency range. Finally, Part C revealed that while bandwidth-limited signals can become severely distorted, they can be effectively restored using a comparator. By comparing the distorted signal against a stable DC reference voltage, the comparator amplifies the differences to produce a squared-up, clean copy of the original data, although a slight phase shift typically remains.
+</p>
 
 ---
 
