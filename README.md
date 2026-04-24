@@ -15,17 +15,30 @@
 
 ### Objectives:
 * **Dimensional Compliance**: Design and assemble a chassis that remains under the $10 \text{ cm} \times 15 \text{ cm} \times 12 \text{ cm}$ size limit
-* Observe and analyze the functional relationship between binary input data and the resulting modulated waveforms.
-* Execute signal demodulation using techniques such as envelope detection, filtering, and product detection.
-* Restore distorted analog signals back into clean digital square waves using comparator circuits.
-* Evaluate system performance against interference, synchronization requirements, and spectral efficiency.
+* **Weight Optimization**: Ensure the total mass of the robot does not exceed the **1kg** maximum weight requirement
+* **Wireless Control**: Implement a stable Bluetooth communication link using the **Dabble** library and an **ESP32** board
+* **Dual-Function Performance**: Balance motor torque and speed to excel in both high-speed agility trials and high-strength soccer tasks
 
 ---
 
 ### Explanations of Project:
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The robot's "brain" is an ESP32 Development Board, which receives directional commands via Bluetooth. These signals are processed in the loop() function to determine motor polarity and speed. Since the ESP32 pins cannot provide enough current to drive motors directly, an L298N Dual H-Bridge module acts as the power intermediary, drawing energy from the battery pack to drive the four N20 motors. The code uses PWM (Pulse Width Modulation) via the ledcWrite function to control the speed of the motors, allowing for smooth acceleration and precise turning.
+&nbsp;&nbsp;&nbsp;&nbsp;The project is an integrated hardware-software system designed for competitive robotics. The hardware consists of a lightweight **acrylic base** that houses the electronic brain and power system. Four **N20 Micro Metal Gear Motors** provide the mechanical drive, while the **L298N Motor Driver** acts as the interface between the low-power ESP32 signals and the high-power requirements of the motors.
+
+&nbsp;&nbsp;&nbsp;&nbsp;  On the software side, the robot is programmed using **C++ (Arduino IDE)**. The code utilizes Pulse Width Modulation (PWM) at a frequency of 1000Hz to control the speed of the motors through the `ledcWrite` function. The **Dabble app** on a smartphone acts as the remote controller, sending directional commands that the ESP32 interprets to set motor speeds at a defined maximum of 255.
 </p>
+
+---
+
+### How Componenets is used:
+| Component | Function / Usage |
+| :--- | :--- |
+| **Acrylic Base** | Provides the structural frame for mounting motors and electronics. |
+| **ESP32 Dev Board** | The central controller that processes Bluetooth signals and manages motor logic. |
+| **L298N Motor Driver** | Receives PWM signals from the ESP32 to drive the four DC motors in forward or reverse. |
+| **Micro Metal Gear Motors** | Converts electrical energy into mechanical rotation to drive the wheels. |
+| **N20 MiniQ Wheels** | Provides the necessary grip and traction for movement on the competition floor. |
+| **LiPo/Power Bank** | Supplies the necessary voltage and current to both the ESP32 and the motor driver. |
 
 ---
 
@@ -38,84 +51,8 @@
 **EXPLANATION**
 * The experiment highlights how digital information can be mapped onto an analog carrier for transmission. It provides a practical look at how hardware components like rectifiers and filters act as an envelope detector to recover the message. A key lesson is the necessity of using a comparator to fix signal degradation, as filtering inherently rounds the edges of the digital pulses.
 
-<details><summary><b>[View EXPERIMENT 15 - Amplitude Shift Keying Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Heretic/blob/main/EXPERIMENT%2015%20-%20Amplitude%20Shift%20Keying.md<br></details>
+<details><summary><b>[View FINAL PROJECT - RC Car Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Heretic/blob/main/EXPERIMENT%2015%20-%20Amplitude%20Shift%20Keying.md<br></details>
 
-</details>
-
----
-
-<details>
-<summary>EXPERIMENT 16 - Frequency Key Shifting</summary> 
-
-**INTRODUCTION**
-* Frequency Shift Keying is a modulation method where the frequency of a carrier wave is varied in accordance with digital binary signals. The system toggles between a "Mark" frequency for logic 1 and a "Space" frequency for logic 0. This experiment explores the FM-based nature of FSK, which provides better noise immunity than amplitude-based methods because the receiver can ignore amplitude fluctuations.
-  
-**EXPLANATION**
-* This laboratory session demonstrated the role of frequency variation in carrying digital information. It successfully showed that complex digital signals can be recovered using relatively simple components like filters and threshold detectors. A major takeaway was the importance of signal conditioning to ensure data integrity, especially in identifying the distinct frequency shifts at the receiver.
-
-<details><summary><b>[View EXPERIMENT 16 - Frequency Key Shifting Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Heretic/blob/main/EXPERIMENT%2016%20-%20Frequency%20Shift%20Keying.md<br></details>
-
-</details>
-
----
-
-<details>
-<summary>EXPERIMENT 17 - Binary Phase Shift Keying</summary> 
-
-**INTRODUCTION**
-* Binary Phase Shift Keying is a sophisticated modulation scheme where the phase of a constant-amplitude carrier is shifted by 180 degrees to represent binary data. Unlike ASK or FSK, BPSK maintains a constant frequency and amplitude, making it highly robust against noise. The experiment examines the circuitry required to modulate and then demodulate these signals using product detection.
-
-**EXPLANATION**
-* The experiment highlights the efficiency of phase-based communication. It shows that while the carrier frequency and amplitude remain static, the information encoded in the phase shifts provides a resilient way to transmit data. Seeing the rounded output of the low-pass filter taught a practical lesson on how bandwidth limitations affect signal integrity and how a comparator can restore that accuracy.
-
-<details><summary><b>[View EXPERIMENT 17 - Binary Phase Shift Keying Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Heretic/blob/main/EXPERIMENT%2017%20-%20Binary%20Phase%20Shift%20Keying.md<br></details>
-
-</details>
-
----
-
-<details>
-<summary>EXPERIMENT 18 - Quadrature Phase Shift Keying</summary> 
-
-**INTRODUCTION**
-* Quadrature Phase Shift Keying is an advanced variation of BPSK that transmits two bits per symbol by utilizing four distinct phase states. By employing orthogonal carriers (90 degrees apart), QPSK can transmit at twice the rate of BPSK within the same radio-frequency bandwidth. This experiment explores serial-to-parallel conversion and the summation of orthogonal carriers.
-
-**EXPLANATION**
-* This session illustrated the transition from serial data to a multi-phase modulated signal. The primary takeaway is that QPSK achieves higher data density through orthogonality, allowing two independent signals to occupy the same frequency space. It also highlighted that precise phase synchronization at the receiver is the most critical factor for successfully separating overlapping signals.
-
-<details><summary><b>[View EXPERIMENT 18 - Quadrature Phase Shift Keying Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Heretic/blob/main/EXPERIMENT%2018%20-%20Quadrature%20Phase%20Shift%20Keying.md<br></details>
-
-</details>
-
----
-
-<details>
-<summary>EXPERIMENT 19 - DSSS Modulation and Demodulation</summary> 
-
-**INTRODUCTION**
-* Direct Sequence Spread Spectrum is a secure modulation technique that replaces a standard carrier with a high-speed pseudo-noise (PN) sequence. This spreads the message energy across a wide frequency spectrum, making the signal look like low-level noise to unauthorized users and providing resistance to jamming. The experiment focuses on the correlation between identical PN codes for data recovery.
-
-**EXPLANATION**
-* The most critical takeaway was the absolute necessity of perfect synchronization. Without an exact matching PN sequence at the receiver, the data remains indistinguishable from background noise. The experiment also provided a practical understanding of how spreading the signal energy makes it resilient against interference, as the despreading process collapses the message while further spreading any jamming signals.
-
-<details><summary><b>[View EXPERIMENT 19 - DSSS Modulation and Demodulation Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Heretic/blob/main/EXPERIMENT%2019%20-%20DSSS%20Modulation%20and%20Demodulation.md<br></details>
-
-</details>
-
----
-
-<details>
-<summary>EXPERIMENT 20 - Undersampling in SDR</summary> 
-
-**INTRODUCTION**
-* Software Defined Radio (SDR) shifts the decoding process from rigid hardware to flexible software. To handle high-frequency signals without requiring extreme sampling rates, SDR uses "undersampling" or bandpass sampling. This experiment investigates how intentionally causing aliasing can shift a high-frequency carrier down to baseband, allowing for efficient digital processing.
-
-**EXPLANATION**
-* The experiment highlights a shift in traditional sampling perspectives. While standard sampling requires rates exceeding twice the highest frequency, SDR leverages the fact that radio signals are bandwidth-limited. Seeing a 2 kHz signal emerge from a 100 kHz carrier using a lower sampling rate clarified how aliasing can be used as a productive tool rather than just a source of distortion.
-
-<details><summary><b>[View EXPERIMENT 20 - Undersampling in SDR Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Heretic/blob/main/EXPERIMENT%2020%20-%20Undersampling%20in%20SDR.md<br></details>
-
-</details>
 
 ---
 
@@ -124,21 +61,24 @@
 
 
 
+https://github.com/user-attachments/assets/275cd1a9-505a-4792-a9af-e9315a3e40e2
+
 
 
 
 ---
 
 ### Learnings: 
-<p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The laboratory sessions provided a practical understanding of how hardware constraints affect digital integrity. A key takeaway is that while modulation and filtering often cause signal rounding and distortion, specialized components like comparators are essential for restoring the sharp transitions required for accurate data reception. Furthermore, the experiments emphasized the critical role of synchronization, especially in DSSS and QPSK, where precise timing and phase alignment are necessary to successfully recover the original message from noise or multiplexed streams.
-</p>
+* **Wireless Protocols**: Gained experience in configuring ESP32 Bluetooth modules and integrating them with mobile gamepad applications.
+* **PWM Control**: Learned how to implement 1000 Hz frequency PWM signals with 8-bit resolution to vary motor speed and direction.
+* **Motor Logic**: Understood the logic required to rotate motors by toggling specific pins (16-19) between HIGH and LOW states for directional control.
+* **Hardware Efficiency**: Discovered the importance of secure wiring using zipties and electrical tape to prevent signal loss during high-impact collisions.
 
 ---
 
 ### Conclusions:
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The successful execution of these experiments validates the theoretical advantages of modern digital modulation. From the simplicity of ASK to the robustness of DSSS and the efficiency of QPSK, the study confirms that digital communication is a balance of managing electromagnetic geometric relationships and hardware limitations. These methodologies remain foundational to the design of resilient wireless networks and secure telecommunication links.
+&nbsp;&nbsp;&nbsp;&nbsp;The RC Robot successfully meets all competition requirements regarding size, weight, and component selection. Through the integration of the **ESP32** and the **L298N driver**, the robot demonstrates reliable wireless control and sufficient maneuverability for both the RC Cup and RC Soccer events. This project reinforces the importance of modular design and efficient power management in creating small-scale competitive robotics.
 </p>
 
 
