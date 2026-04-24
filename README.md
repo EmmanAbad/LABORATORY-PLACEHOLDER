@@ -76,7 +76,7 @@ https://github.com/user-attachments/assets/275cd1a9-505a-4792-a9af-e9315a3e40e2
 
 ### Conclusions:
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The RC Robot successfully meets all competition requirements regarding size, weight, and component selection. Through the integration of the **ESP32** and the **L298N driver**, the robot demonstrates reliable wireless control and sufficient maneuverability for both the RC Cup and RC Soccer events. This project reinforces the importance of modular design and efficient power management in creating small-scale competitive robotics.
+&nbsp;&nbsp;&nbsp;&nbsp;The RC Robot successfully meets all competition requirements regarding size, weight, and component selection. Through the integration of the ESP32 and the L298N driver, the robot demonstrates reliable wireless control and sufficient maneuverability for both the RC Cup and RC Soccer events. This project reinforces the importance of modular design and efficient power management in creating small-scale competitive robotics.
 </p>
 
 
