@@ -54,21 +54,6 @@
 
 ---
 
-### Presentations:
-
-
-
-
-
-
-https://github.com/user-attachments/assets/c3a60d8b-8843-457d-8bc2-ce2089aba0e0
-
-
-
-
-
----
-
 ### Learnings: 
 * **Wireless Protocols**: Gained experience in configuring ESP32 Bluetooth modules and integrating them with mobile gamepad applications.
 * **PWM Control**: Learned how to implement 1000 Hz frequency PWM signals with 8-bit resolution to vary motor speed and direction.
