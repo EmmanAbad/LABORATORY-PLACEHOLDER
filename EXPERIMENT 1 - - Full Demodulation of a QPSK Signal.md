@@ -1,4 +1,4 @@
-# EXPERIMENT 1 - - Full Demodulation of a QPSK Signal :page_facing_up: 
+# EXPERIMENT 1 - Full Demodulation of a QPSK Signal :page_facing_up: 
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;At its core, QPSK is basically two BPSK signals running on the same frequency but shifted in phase so they don't interfere with each other. While BPSK is essentially a DSBSC scheme using digital data for the message, QPSK sends two bits at a time. It's a bit of a trick, though; because we convert a fast serial bitstream into two slower parallel ones, the actual symbol rate stays the same while the data throughput doubles.
 
