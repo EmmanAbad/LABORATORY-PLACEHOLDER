@@ -1,4 +1,4 @@
-<img width="290" height="174" alt="image" src="https://github.com/user-attachments/assets/441f971b-3cd4-4609-9a91-dba1ee189034" /># FINAL PROJECT - RC Car :car: 
+# FINAL PROJECT - RC Car :car: 
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;The RC Car is a low-profile, four-wheeled vehicular robot built on a transparent acrylic chassis that emphasizes a modular and visible internal layout. It features a 4WD (Four-Wheel Drive) powertrain using high-torque N20 micro motors, which are mounted securely to the underside of the base using specialized white brackets. The top of the chassis houses the central control hub, consisting of the ESP32 microcontroller and the L298N motor driver, with a multi-colored wiring harness connecting the digital pins to the driver inputs.
 
