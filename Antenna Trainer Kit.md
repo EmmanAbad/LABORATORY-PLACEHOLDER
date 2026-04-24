@@ -44,7 +44,7 @@
 | Category | Item | Function / Usage |
 | :--- | :--- | :--- |
 | **Component** | <details><summary><b>ESP32 (Type C)</b></summary><br><img width="1100" height="1100" alt="image" src="https://github.com/user-attachments/assets/f326f3bf-e3ea-41b3-8360-2117eb49d182" />
-<br></details>| Processes Bluetooth signals and generates PWM signals for motor speed control. |
+<br></details> | Processes Bluetooth signals and generates PWM signals for motor speed control. |
 | **Component** | <details><summary><b>L298N Motor Driver</b></summary><br><img width="599" height="554" alt="image" src="https://github.com/user-attachments/assets/1b615904-031c-4246-a02a-377dc458d0ab" />
 <br></details> | Acts as a high-current bridge to drive motors based on low-power ESP32 signals. |
 | **Component** | <details><summary><b>N20 Micro Motors</b></summary><br><img width="317" height="248" alt="image" src="https://github.com/user-attachments/assets/33dc3b7d-57a1-4026-b1f7-137cbdda73de" />
