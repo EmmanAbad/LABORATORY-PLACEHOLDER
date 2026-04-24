@@ -1,9 +1,11 @@
-# Antenna Trainer Kit :page_facing_up: 
+# FINAL PROJECT - RC Car :car: 
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The Antenna Trainer Kit is a modular laboratory system designed to bridge the gap between electromagnetic theory and practical RF engineering. It serves as a specialized platform for observing how physical design—including the length, shape, and arrangement of conductive elements—shapes the distribution of electromagnetic energy. The kit allows for the experimental mapping of radiation patterns and the measurement of critical performance metrics like gain, directivity, and impedance matching.
+&nbsp;&nbsp;&nbsp;&nbsp;The field of competitive robotics requires a precise balance between mechanical durability and software responsiveness. This project details the engineering and assembly of a custom-built RC Robot specifically designed to meet the rigorous demands of the RC Cup and RC Soccer competitions. The primary challenge of this build was to integrate high-torque drive systems and wireless control within a compact frame that does not exceed 10 cm in width, 15 cm in length, and 12 cm in height. Furthermore, the entire assembly was required to maintain a total weight of less than 1kg to remain eligible for the competition.
+
+&nbsp;&nbsp;&nbsp;&nbsp;At the heart of the robot is a Type C ESP32 Development Board, which provides the necessary Bluetooth connectivity for remote operation. The robot utilizes a four-wheel-drive (4WD) configuration, employing four JGA12-N20 Micro Metal DC Gear Motors capable of 500RPM at 6V. These motors are controlled via an L298N Dual H-Bridge module, allowing for independent control of the left and right drive sides. By mounting these components on a rigid acrylic base and optimizing the power delivery system, the robot achieves the high power-to-weight ratio needed for the agility trials of the RC Cup and the physical strength required for the RC Soccer matches.
 </p>
 
-<img width="636" height="383" alt="image" src="https://github.com/user-attachments/assets/de930eae-8ecf-488b-a404-438769a22527" />
+![IMG_0606](https://github.com/user-attachments/assets/23521e0a-5a94-40e4-860d-ca98273539c8)
 
 ---
 
