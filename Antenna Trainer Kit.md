@@ -42,7 +42,7 @@
 **Antenna Elements**
 
 | Category | Item | Function / Usage |
-| :--- | :--- | :--- |
+| --- | --- | --- |
 | **Component** | <details><summary><b>ESP32 (Type C)</b></summary><br><img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/f326f3bf-e3ea-41b3-8360-2117eb49d182" />
 <br></details> | Processes Bluetooth signals and generates PWM signals for motor speed control. |
 | **Component** | <details><summary><b>L298N Motor Driver</b></summary><br><img width="200" height="200" alt="image" alt="image" src="https://github.com/user-attachments/assets/1b615904-031c-4246-a02a-377dc458d0ab" />
