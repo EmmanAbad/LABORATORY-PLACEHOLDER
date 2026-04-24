@@ -48,11 +48,9 @@
 **INTRODUCTION**
 * This project involves the development of a compact, four-wheel-drive RC robot designed for the RC Cup (Agility) and RC Soccer (Strength) competitions. Built on a Type C ESP32 platform, the robot utilizes high-torque N20 micro gear motors and an L298N driver to meet strict size ($10 \times 15 \times 12$ cm) and weight ($1$ kg) requirements.
 
-**EXPLANATION**
-* The experiment highlights how digital information can be mapped onto an analog carrier for transmission. It provides a practical look at how hardware components like rectifiers and filters act as an envelope detector to recover the message. A key lesson is the necessity of using a comparator to fix signal degradation, as filtering inherently rounds the edges of the digital pulses.
-
 <details><summary><b>[View FINAL PROJECT - RC Car Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Heretic/blob/main/EXPERIMENT%2015%20-%20Amplitude%20Shift%20Keying.md<br></details>
 
+</details>
 
 ---
 
