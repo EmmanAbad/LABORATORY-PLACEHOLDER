@@ -35,6 +35,8 @@
 
 <img width="961" height="765" alt="image" src="https://github.com/user-attachments/assets/85239c69-cc23-4e06-a123-3850918d47eb" />
 
+<details><summary><b>[View RC CAR PROGRAM Details]</b></summary><br>https://github.com/EmmanAbad/Project-Quicksilver/blob/main/RCProgram.ino<br></details>
+
 </p>
 
 ---
@@ -99,8 +101,14 @@ Connect the power source (LiPo or Power Bank) to the L298N power terminals and t
 Pair the smartphone with the ESP32 via Bluetooth. Open the Dabble app and test the directional controls. If the robot moves in the wrong direction, reverse the polarity of the motor wires at the L298N terminal blocks.
 
 ---
+
 ### Pictures
 
+<img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/0b7a7085-601c-4024-afd4-210c8965ea8d" />
+
+<img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/c2550788-3e7f-4c7f-aaae-0ed991d6efb6" />
+
+<img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/b934e6c5-5008-45b5-8a67-91d165230034" />
 
 ---
 
