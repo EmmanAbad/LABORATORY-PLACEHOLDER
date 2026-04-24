@@ -16,6 +16,7 @@
 * Amplitude Shift Keying, often referred to as On-Off Keying (OOK), is a basic digital modulation technique where the binary bitstream controls the carrier amplitude. In this scheme, the carrier is transmitted at full power for a logic high and is completely suppressed for a logic low. This experiment focuses on creating the ASK envelope and using an envelope detector to strip the carrier away for data recovery.
 
 **EXPLANATION**
+
 The experiment is structured to demonstrate the full lifecycle of a digital signal within a QPSK system:
 
 * Bit Stream Manipulation: The process begins with a high-speed serial data stream that is converted into two slower parallel streams (In-phase and Quadrature) using a Serial-to-Parallel (S/P) converter.
@@ -39,7 +40,7 @@ The experiment is structured to demonstrate the full lifecycle of a digital sign
 
 ---
 
-### Conclusions:
+### Conclusion:
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;The experiment successfully validated the principles of QPSK modulation and demodulation. By following a systematic approach, the setup confirmed that two independent bitstreams can be carried on a single frequency without interference, provided the carriers remain orthogonal. While the system demonstrated high data throughput, the tests with noise and phase offsets highlighted the necessity of a precise phase reference at the receiver. Ultimately, the experiment proved that as long as timing and phase are strictly controlled, the original information can be recovered with high fidelity.
 </p>
