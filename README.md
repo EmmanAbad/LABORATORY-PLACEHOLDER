@@ -48,7 +48,7 @@
 **INTRODUCTION**
 * This project involves the development of a compact, four-wheel-drive RC robot designed for the RC Cup (Agility) and RC Soccer (Strength) competitions. Built on a Type C ESP32 platform, the robot utilizes high-torque N20 micro gear motors and an L298N driver to meet strict size ($10 \times 15 \times 12$ cm) and weight ($1$ kg) requirements.
 
-<details><summary><b>[View FINAL PROJECT - RC Car Details]</b></summary><br>https://github.com/EmmanAbad/Laboratory-Heretic/blob/main/EXPERIMENT%2015%20-%20Amplitude%20Shift%20Keying.md<br></details>
+<details><summary><b>[View FINAL PROJECT - RC Car Details]</b></summary><br>https://github.com/EmmanAbad/Project-Quicksilver/blob/main/FINAL%20PROJECT%20-%20RC%20Car.md<br></details>
 
 </details>
 
