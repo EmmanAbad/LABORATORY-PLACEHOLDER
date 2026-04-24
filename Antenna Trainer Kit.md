@@ -1,87 +1,119 @@
-# FINAL PROJECT - RC Car :car: 
+<img width="290" height="174" alt="image" src="https://github.com/user-attachments/assets/441f971b-3cd4-4609-9a91-dba1ee189034" /># FINAL PROJECT - RC Car :car: 
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;The RC Car is a low-profile, four-wheeled vehicular robot built on a transparent acrylic chassis that emphasizes a modular and visible internal layout. It features a 4WD (Four-Wheel Drive) powertrain using high-torque N20 micro motors, which are mounted securely to the underside of the base using specialized white brackets. The top of the chassis houses the central control hub, consisting of the ESP32 microcontroller and the L298N motor driver, with a multi-colored wiring harness connecting the digital pins to the driver inputs.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Visually, the robot is characterized by its high-traction, treaded MiniQ wheels designed for surface grip during rapid accelerations and sharp turns. The power system is underslung or integrated into the base to maintain a low center of gravity, which is essential for preventing rollovers during the "Agility" phase of the competition. The wiring is managed with zipties and electrical tape, ensuring that no loose leads interfere with the mechanical rotation of the axles or wheels during high-speed operation.
+</p>
+
+<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/60771358-e37c-479a-9417-f8bdb5cee367" />
+
+---
+
+### Introduction 
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;The field of competitive robotics requires a precise balance between mechanical durability and software responsiveness. This project details the engineering and assembly of a custom-built RC Robot specifically designed to meet the rigorous demands of the RC Cup and RC Soccer competitions. The primary challenge of this build was to integrate high-torque drive systems and wireless control within a compact frame that does not exceed 10 cm in width, 15 cm in length, and 12 cm in height. Furthermore, the entire assembly was required to maintain a total weight of less than 1kg to remain eligible for the competition.
 
 &nbsp;&nbsp;&nbsp;&nbsp;At the heart of the robot is a Type C ESP32 Development Board, which provides the necessary Bluetooth connectivity for remote operation. The robot utilizes a four-wheel-drive (4WD) configuration, employing four JGA12-N20 Micro Metal DC Gear Motors capable of 500RPM at 6V. These motors are controlled via an L298N Dual H-Bridge module, allowing for independent control of the left and right drive sides. By mounting these components on a rigid acrylic base and optimizing the power delivery system, the robot achieves the high power-to-weight ratio needed for the agility trials of the RC Cup and the physical strength required for the RC Soccer matches.
 </p>
 
-![IMG_0606](https://github.com/user-attachments/assets/23521e0a-5a94-40e4-860d-ca98273539c8)
-
----
-
-### Introduction 
-<p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The Antenna Trainer Kit experiment is a comprehensive laboratory study designed to bridge the gap between theoretical electromagnetic propagation and practical RF engineering. Antennas serve as the critical interface between guided waves in a transmission line and free-space electromagnetic radiation. By utilizing a modular trainer system, this experiment allows for the visualization of invisible energy fields, demonstrating how physical geometry—such as the length, shape, and arrangement of conductive elements—directly dictates the efficiency and directionality of wireless communication. From basic resonant dipoles to complex multi-element Yagi-Uda arrays, this study provides a hands-on exploration of signal strength, impedance synchronization, and spatial filtering.
-</p>
-
 ---
 
 ### Objectives
-* To experimentally plot the two-dimensional radiation patterns of various antennas using a polar coordinate system to visualize electromagnetic energy distribution.
-* To calculate and compare fundamental antenna parameters, including forward gain, directivity, front-to-back ratio, and the half-power beamwidth (HPBW).
-* To investigate how the addition of parasitic elements (reflectors and directors) and element phasing influence the concentration of the main radiation lobe.
-* To demonstrate the practical application of matching stubs in minimizing the Standing Wave Ratio (SWR) and maximizing power transfer efficiency between the source and the radiator.
-* To observe the effects of cross-polarization and understand the importance of physical orientation in maintaining link reliability.
+* **Standardized Footprint**: Construct a robot that strictly adheres to the maximum dimensions of 10 cm x 15 cm x 12 cm.
+* **Weight Management**: Implement a design that optimizes structural integrity while staying below the 1kg weight limit.
+* **Wireless Interconnectivity**: Establish a reliable Bluetooth communication protocol between the ESP32 and a mobile gamepad interface.
+* **Drive System Synchronization**: Configure the L298N motor driver to provide synchronous 4WD control for consistent movement.
+* **Competitive Versatility**: Ensure the robot possesses sufficient speed for agility tasks and enough torque for strength-based soccer interactions.
 
 ---
 
-### System Equipment and Antenna Elements
-**Laboratory Hardware**
-* <details><summary><b>Master Antenna Trainer Unit</b></summary><br><img width="425" height="212" alt="image" src="https://github.com/user-attachments/assets/d7c78fe9-b38f-436c-849f-ffdae922015e" /><br></details>- The central control unit providing a regulated RF signal source, modulation controls, and a display for signal strength monitoring. 
-* <details><summary><b>Matching Stub</b></summary><br><img width="215" height="606" alt="image" src="https://github.com/user-attachments/assets/cbce1336-9630-4965-aef2-60c9cf985e9e" /><br></details>- A transmission-line tuning device used to compensate for reactive components and match antenna impedance to the feeder line.
-* <details><summary><b>Transmitting Mast</b></summary><br><img width="455" height="555" alt="image" src="https://github.com/user-attachments/assets/92c4d40a-71ac-491e-afea-99075f27b1e0" /><br></details>- A rotatable structure with a 360° angular scale used to adjust and measure the orientation of the transmitting antenna.
-* <details><summary><b>Receiving Mast</b></summary><br><img width="459" height="324" alt="image" src="https://github.com/user-attachments/assets/287c344a-82a7-49db-ae6e-1450158b2015" /><br></details>- A fixed support that holds the detector at a constant distance to maintain far-field measurement conditions.
-* <details><summary><b>RF Detector</b></summary><br><img width="409" height="512" alt="image" src="https://github.com/user-attachments/assets/e1f2974c-9e8a-4918-9c7f-e40fbb5b59b4" /><br></details>- A rectifier circuit that converts received RF energy into a measurable DC signal.
-
-**Antenna Elements**
-| Category | Antenna Type | Brief Description |
-| :--- | :--- | :--- |
-| **Probes** | <details><summary><b>Detector Antenna</b></summary><br><img width="222" height="746" alt="image" src="https://github.com/user-attachments/assets/6c621408-9b8d-441e-85e8-538ac355db5f" /><br></details> | A compact probe used to measure field strength without significantly disturbing the radiation pattern. |
-| **Simple Dipoles** | <details><summary><b>Simple Dipole (λ/2, λ/4, 3λ/2) </b></summary><br><img width="302" height="121" alt="image" src="https://github.com/user-attachments/assets/f0f0d7e8-863f-49fb-8dbb-97c2ca6af98b" /><img width="347" height="240" alt="image" src="https://github.com/user-attachments/assets/a4badc2a-ee57-4d00-b71e-d1247bc64583" /><img width="335" height="299" alt="image" src="https://github.com/user-attachments/assets/83ec0260-ccae-4dfe-a964-360157e57d78" /><br></details> | Resonant radiators ranging from monopole types ($\lambda/4$) to harmonic long-wires ($3\lambda/2$) used to study fundamental patterns and lobes. |
-| | <details><summary><b>Folded Dipole (λ/2)</b></summary><br><img width="240" height="99" alt="image" src="https://github.com/user-attachments/assets/8a7c0d4b-3f93-402c-b8df-80f30c39ce8f" /><br></details> | A dipole where the conductor is folded back on itself to increase input impedance and bandwidth. |
-| | <details><summary><b>Hertz Antenna</b></summary><br><img width="284" height="120" alt="image" src="https://github.com/user-attachments/assets/c1bee701-3c14-463b-8f08-01eefaf50eb3" /><br></details> | A basic balanced antenna system that operates without relying on ground conduction. |
-| | <details><summary><b>Zeppelin (Zepp) Antenna</b></summary><br><img width="305" height="88" alt="image" src="https://github.com/user-attachments/assets/b8331570-9c3e-4f05-9b0b-63247f8b397d" /><br></details> | An end-fed half-wave antenna historically utilized in airship communications. |
-| **Yagi-Uda Arrays** | <details><summary><b>3 & 5-Element Folded Dipole</b></summary><br><img width="328" height="533" alt="image" src="https://github.com/user-attachments/assets/5648122a-5733-477e-9da4-1ea5734b879c" /><img width="350" height="501" alt="image" src="https://github.com/user-attachments/assets/c2795d8e-1eb3-4217-abbe-3eae89f77326" /><br></details> | Directional arrays consisting of a folded driver, reflector, and directors to concentrate radiation. |
-| | <details><summary><b>7-Element Simple Dipole</b></summary><br><img width="332" height="592" alt="image" src="https://github.com/user-attachments/assets/8f269415-4c48-47fb-9ff4-dcd0fd6d7d7e" /><br></details> | High-directivity arrays using straight dipole drivers to narrow the main beam for point-to-point communication. |
-| **Phased Arrays** | <details><summary><b>λ/2 & λ/4 Phase Arrays</b></summary><br><img width="279" height="244" alt="image" src="https://github.com/user-attachments/assets/7db37fc5-591c-4506-b3aa-6d422f403d12" /><img width="296" height="515" alt="image" src="https://github.com/user-attachments/assets/95b8903b-8aca-421e-a308-e00c7d91c4e8" /><br></details> | Dual-element arrays used to study interference patterns and end-fire radiation based on feed phase. |
-| | <details><summary><b>Broadside Array</b></summary><br><img width="343" height="227" alt="image" src="https://github.com/user-attachments/assets/7d7135d7-8ff9-46df-802b-024e84052f3e" /><br></details> | Multiple elements fed in phase to generate a radiation lobe perpendicular to the array axis. |
-| | <details><summary><b>Combined Collinear Array</b></summary><br><img width="297" height="497" alt="image" src="https://github.com/user-attachments/assets/e7c0b3a5-af85-43e0-9a3f-1ea85416ac9e" /><br></details> | Vertically stacked dipoles designed to increase omnidirectional gain along the horizontal plane. |
-| **Specialized Geometries** | <details><summary><b>Slot Antenna (λ/2)</b></summary><br><img width="270" height="125" alt="image" src="https://github.com/user-attachments/assets/34ba4e72-6289-46cb-a2bd-f515d1515805" /><br></details> | A slot cut into a conductive surface that radiates with polarization perpendicular to the slot. |
-| | <details><summary><b>Helix Antenna</b></summary><br><img width="326" height="352" alt="image" src="https://github.com/user-attachments/assets/b72501a3-6666-49ec-8723-00bda752bc8c" /><br></details> | A spiral-shaped conductor that produces circular polarization in axial mode. |
-| | <details><summary><b>Loop Antenna</b></summary><br><img width="329" height="306" alt="image" src="https://github.com/user-attachments/assets/55ad3cd6-2967-479f-b21b-ea1856e228de" /><br></details> | A closed conductor acting as a magnetic dipole to reduce electrical noise. |
-| | <details><summary><b>Log Periodic Antenna</b></summary><br><img width="338" height="679" alt="image" src="https://github.com/user-attachments/assets/f8cfc26c-1db7-4d45-b04d-050d81728179" /><br></details> | A broadband antenna with scaled elements for consistent performance across a wide frequency range. |
-| | <details><summary><b>Rhombus Antenna</b></summary><br><img width="291" height="247" alt="image" src="https://github.com/user-attachments/assets/c4c60a0a-26f3-43c5-a04b-8fb8c5ba423d" /><br></details> | A large, diamond-shaped non-resonant wire antenna used for high-frequency, long-distance communication. |
-| | <details><summary><b>Ground Plane Antenna</b></summary><br><img width="343" height="296" alt="image" src="https://github.com/user-attachments/assets/433987e1-4732-4be8-b1b8-70315ec0f93a" /><br></details> | A vertical radiator with radial conductors that simulate an artificial ground surface. |
-
-**Equipment Learning**
+### How the RC Car Works (System Operation)
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;Through the technical exploration of the Antenna Trainer Kit, I learned that efficient wireless communication relies as much on geometric precision as it does on electronic tuning. I discovered that the Matching Stub is a critical intermediary, proving that signal power from the Master Antenna Trainer Unit is only effective when impedance is synchronized to minimize reflections. Using the Transmitting and Receiving Masts taught me that maintaining specific distances is a functional requirement to establish far-field conditions for accurate measurement. Furthermore, testing elements like the Yagi-Uda, Helix, and Slot antennas demonstrated that an antenna acts as a spatial filter, where physical shape and "negative space" are engineered to dictate gain, directionality, and polarization. Ultimately, the use of Phase and Collinear arrays revealed that signal strength can be amplified through constructive interference, highlighting that physical orientation is vital for optimizing modern RF systems.
+&nbsp;&nbsp;&nbsp;&nbsp;The robot operates as an integrated wireless system. The user provides inputs via a smartphone application (Dabble), which are transmitted over Bluetooth to the ESP32. The ESP32 processes these inputs using a C++ program that maps gamepad buttons to specific motor states. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;To achieve movement, the ESP32 sends Pulse Width Modulation (PWM) signals and digital logic signals to the L298N motor driver. The driver then amplifies these signals to provide enough current to the four N20 motors. For example, when the "Forward" command is received, the ESP32 sets the pins to drive both the right and left motor sets in the same direction at maximum PWM speed (255). Turning is achieved through differential steering, where the left and right motor sets rotate in opposite directions, allowing the robot to spin in place.
+
+<img width="961" height="765" alt="image" src="https://github.com/user-attachments/assets/85239c69-cc23-4e06-a123-3850918d47eb" />
+
 </p>
 
 ---
 
-**Procedure – Part A: Far-Field Calibration & Impedance Matching**
-1. Position the transmitting and receiving masts approximately 1 to 1.5 meters apart to establish a stable far-field environment.
-2. Connect the Master Unit's RF output to the matching stub, then to the transmitting antenna, and link the detector probe to the signal input.
-3. Install a standard $\lambda/2$ dipole and adjust the sliding matching stub until the signal meter reaches its maximum peak, ensuring the system is perfectly tuned.
-   
-**Procedure – Part B: Radiation Pattern Mapping**
-1. Set the transmitting mast to the 0° reference point and calibrate the Master Unit's gain so the meter reads a full-scale "100%" or "0 dB" reference.
-2. Rotate the transmitting mast in 10° increments, pausing at each stop to record the signal strength until a full 360° circle is completed.
+**Antenna Elements**
 
-**Procedure – Part C: Comparative Array Testing**
-1. Replace the simple dipole with a 7-element Yagi-Uda array and repeat the 360° rotation to observe the narrowing of the beam and the increase in forward gain.
+| Category | Item | Function / Usage |
+| :--- | :--- | :--- |
+| **Component** | <details><summary><b>ESP32 (Type C)</b></summary><br><img width="1100" height="1100" alt="image" src="https://github.com/user-attachments/assets/f326f3bf-e3ea-41b3-8360-2117eb49d182" />
+<br></details> | Processes Bluetooth signals and generates PWM signals for motor speed control. |
+| **Component** | <details><summary><b>L298N Motor Driver</b></summary><br><img width="599" height="554" alt="image" src="https://github.com/user-attachments/assets/1b615904-031c-4246-a02a-377dc458d0ab" />
+<br></details> | Acts as a high-current bridge to drive motors based on low-power ESP32 signals. |
+| **Component** | <details><summary><b>N20 Micro Motors</b></summary><br><img width="317" height="248" alt="image" src="https://github.com/user-attachments/assets/33dc3b7d-57a1-4026-b1f7-137cbdda73de" />
+<br></details> | Four 6V 500RPM gear motors providing the mechanical drive force. |
+| **Component** | <details><summary><b>Acrylic Base</b></summary><br><img width="1603" height="2004" alt="image" src="https://github.com/user-attachments/assets/f2ca54fd-ee1e-4ecf-a74d-de2fbaec0f6f" />
+<br></details> | The main structural frame of the robot, providing a mounting surface for all parts. |
+| **Component** | <details><summary><b>LiPo / Power Bank</b></summary><br><img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/1c576bc8-7042-415f-9185-45b75f49790f" />
+<br></details> | Supplies the necessary voltage and current for both the logic and the actuators. |
+| **Tool** | <details><summary><b>Soldering Iron & Lead</b></summary><br><img width="290" height="174" alt="image" src="https://github.com/user-attachments/assets/f77e9e59-55ba-4aea-86a5-b9de0565f861" />
+<br></details> | Used for making permanent, secure electrical connections on motor terminals. |
+| **Tool** | <details><summary><b>Precision Screwdrivers</b></summary><br><img width="1200" height="915" alt="image" src="https://github.com/user-attachments/assets/6830c17b-8609-46bf-b5f0-9e1de2c8932b" />
+<br></details> | Used for fastening the N20 motor brackets and the acrylic chassis assembly. |
+| **Tool** | <details><summary><b>Zipties & Electric Tape</b></summary><br><img width="570" height="386" alt="image" src="https://github.com/user-attachments/assets/ba5a8db4-be3b-4241-b402-fa7aea224bff" />
+<br></details> | Essential for wire management and insulating exposed connections. |
+| **Tool** | <details><summary><b>Soldering Paste</b></summary><br><img width="1024" height="905" alt="image" src="https://github.com/user-attachments/assets/36ee7ecd-eb5d-4cc5-aae3-783c17cf1e7d" />
+<br></details> | Facilitates cleaner and more reliable solder joints on mechanical parts. |
+
+---
+
+**Components and Technical Tools Learning**
+###### Technical Tool Learnings
+* **Precision Soldering**: Mastered the technique of applying soldering paste to N20 motor terminals to ensure high-conductivity joints that can withstand the vibrations of a soccer match.
+* **Effective Wire Management**: Discovered that using zipties not only improves the aesthetic of the build but is a mechanical necessity to prevent wires from snagging on moving axles.
+* **Torque vs. Speed Calibration**: Learned to use precision tools to adjust motor bracket tension, ensuring that all four wheels maintain equal contact with the ground for maximum torque delivery.
+
+###### Component-Level Learnings
+* **ESP32 GPIO Management**: Gained expertise in mapping digital pins (16-19) and utilizing PWM channels to vary speed, rather than just simple ON/OFF control.
+* **H-Bridge Logic**: Understood the internal logic of the L298N, specifically how it uses dual-input signals per channel to determine clockwise or counter-clockwise rotation.
+* **Power Distribution**: Learned how to effectively split power between a logic board (ESP32) and high-draw actuators (motors) to prevent system brownouts during peak acceleration.
+* **Firmware Customization**: Developed the ability to configure the Dabble library to create a low-latency Bluetooth link, ensuring the robot responds instantly to user commands.
+
+---
+
+### Procedural Stesp (Assembly and Configuration)
+
+###### Step 1: Chassis Preparation and Motor Mounting
+Begin by preparing the acrylic base. Mark the positions for the four N20 micro motors. Using the MiniQ brackets and precision screwdrivers, secure each motor to the corners of the chassis. Ensure the axles are perfectly parallel to maintain straight-line tracking.
+
+###### Step 2: Electronic Component Placement
+Position the L298N Motor Driver and the ESP32 Development Board on the top surface of the acrylic base. Use adhesive spacers or mounting screws to fix them in place, ensuring there is enough clearance to prevent electrical shorts against the chassis.
+
+###### Step 3: Soldering and Wiring
+Apply soldering paste to the motor terminals. Solder solid wires to each of the four motors. Route these wires toward the center of the robot. Connect the motors in pairs (left side and right side) to the output terminals of the L298N driver. Use male-to-female and female-to-female wires to connect the ESP32 GPIO pins (16, 17, 18, and 19) to the logic inputs of the L298N.
+
+###### Step 4: Firmware Upload
+Connect the ESP32 to a computer via a Type-C cable. Using the Arduino IDE, upload the control firmware. Ensure the Dabble library is included and the Bluetooth device name is correctly set. Verify that the PWM frequency is set to 1000Hz for smooth motor operation.
+
+###### Step 5: Power Integration and Wire Management
+Connect the power source (LiPo or Power Bank) to the L298N power terminals and the ESP32. Use zipties to bundle the loose wires and electrical tape to insulate all exposed solder joints. This prevents mechanical interference with the wheels.
+
+###### Step 6: Testing and Calibration
+Pair the smartphone with the ESP32 via Bluetooth. Open the Dabble app and test the directional controls. If the robot moves in the wrong direction, reverse the polarity of the motor wires at the L298N terminal blocks.
+
+---
+### Pictures
+
 
 ---
 
 ### Learnings
-<p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;This experiment provided a practical visualization of how geometric design dictates electromagnetic behavior. It demonstrated that antennas act as spatial filters, shaping energy in specific directions. A key insight was the role of parasitic elements; although unpowered, they significantly modify the radiation pattern through mutual coupling. Furthermore, the importance of impedance matching was highlighted; without the matching stub, power transfer efficiency is significantly compromised, regardless of the antenna's theoretical gain.
-</p>
+* **PWM Implementation**: Gained proficiency in using `ledcSetup` and `ledcAttachPin` to control DC motor speed with an 8-bit resolution.
+* **Differential Steering Logic**: Developed the logic required to translate simple gamepad inputs into complex motor states for turning and reversing.
+* **Hardware Integration**: Learned the practicalities of mounting N20 motors using MiniQ brackets to ensure a stable wheel alignment.
+* **Firmware Debugging**: Experienced the process of establishing a Bluetooth handshake and naming the device for clear identification.
+* **Circuit Efficiency**: Understood the necessity of using direct motor driver connections to handle the current demands of four separate gear motors.
 
 ---
 
 ### Conclusion
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The laboratory successfully demonstrated that antenna performance is a direct result of geometric precision. We confirmed that while a simple dipole offers broad, figure-eight coverage, multi-element arrays are essential for long-distance, point-to-point communication due to their high directivity and front-to-back ratios. The 20 dB drop observed during the polarization test further proved that physical alignment is as critical as frequency tuning in RF system design. Ultimately, this kit provides the essential foundation for optimizing modern wireless networks and high-frequency communication systems.
+&nbsp;&nbsp;&nbsp;&nbsp;The construction of this RC Robot successfully demonstrates the application of embedded systems in a competitive robotics environment. By strictly following the dimensional and weight constraints, a highly mobile and powerful platform was achieved. The use of the ESP32 and L298N combination proved to be an efficient choice for wireless 4WD control, providing the necessary responsiveness for the RC Cup and the durability for RC Soccer. This project reinforces key engineering principles, including efficient space utilization, secure electrical assembly, and the effective mapping of software logic to mechanical action.
 </p>
