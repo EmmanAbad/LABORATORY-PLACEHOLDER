@@ -43,23 +43,23 @@
 
 | Category | Item | Function / Usage |
 | :--- | :--- | :--- |
-| **Component** | <details><summary><b>ESP32 (Type C)</b></summary><br><img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/f326f3bf-e3ea-41b3-8360-2117eb49d182" />
+| **Component** | <details><summary><b>ESP32 (Type C)</b></summary><br><img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/f326f3bf-e3ea-41b3-8360-2117eb49d182" />
 <br></details> | Processes Bluetooth signals and generates PWM signals for motor speed control. |
-| **Component** | <details><summary><b>L298N Motor Driver</b></summary><br><img width="500" height="500" alt="image" alt="image" src="https://github.com/user-attachments/assets/1b615904-031c-4246-a02a-377dc458d0ab" />
+| **Component** | <details><summary><b>L298N Motor Driver</b></summary><br><img width="200" height="200" alt="image" alt="image" src="https://github.com/user-attachments/assets/1b615904-031c-4246-a02a-377dc458d0ab" />
 <br></details> | Acts as a high-current bridge to drive motors based on low-power ESP32 signals. |
-| **Component** | <details><summary><b>N20 Micro Motors</b></summary><br><img width="500" height="500" alt="image" alt="image" src="https://github.com/user-attachments/assets/33dc3b7d-57a1-4026-b1f7-137cbdda73de" />
+| **Component** | <details><summary><b>N20 Micro Motors</b></summary><br><img width="200" height="200" alt="image" alt="image" src="https://github.com/user-attachments/assets/33dc3b7d-57a1-4026-b1f7-137cbdda73de" />
 <br></details> | Four 6V 500RPM gear motors providing the mechanical drive force. |
-| **Component** | <details><summary><b>Acrylic Base</b></summary><br><img width="500" height="500" alt="image" alt="image" src="https://github.com/user-attachments/assets/f2ca54fd-ee1e-4ecf-a74d-de2fbaec0f6f" />
+| **Component** | <details><summary><b>Acrylic Base</b></summary><br><img width="200" height="200" alt="image" alt="image" src="https://github.com/user-attachments/assets/f2ca54fd-ee1e-4ecf-a74d-de2fbaec0f6f" />
 <br></details> | The main structural frame of the robot, providing a mounting surface for all parts. |
-| **Component** | <details><summary><b>LiPo / Power Bank</b></summary><br><img width="500" height="500" alt="image" alt="image" src="https://github.com/user-attachments/assets/1c576bc8-7042-415f-9185-45b75f49790f" />
+| **Component** | <details><summary><b>LiPo / Power Bank</b></summary><br><img width="200" height="200"" alt="image" alt="image" src="https://github.com/user-attachments/assets/1c576bc8-7042-415f-9185-45b75f49790f" />
 <br></details> | Supplies the necessary voltage and current for both the logic and the actuators. |
-| **Tool** | <details><summary><b>Soldering Iron & Lead</b></summary><br><img width="500" height="500" alt="image" alt="image" src="https://github.com/user-attachments/assets/f77e9e59-55ba-4aea-86a5-b9de0565f861" />
+| **Tool** | <details><summary><b>Soldering Iron & Lead</b></summary><br><img width="200" height="200" alt="image" alt="image" src="https://github.com/user-attachments/assets/f77e9e59-55ba-4aea-86a5-b9de0565f861" />
 <br></details> | Used for making permanent, secure electrical connections on motor terminals. |
-| **Tool** | <details><summary><b>Precision Screwdrivers</b></summary><br><img width="500" height="500" alt="image" alt="image" src="https://github.com/user-attachments/assets/6830c17b-8609-46bf-b5f0-9e1de2c8932b" />
+| **Tool** | <details><summary><b>Precision Screwdrivers</b></summary><br><img width="200" height="200" alt="image" alt="image" src="https://github.com/user-attachments/assets/6830c17b-8609-46bf-b5f0-9e1de2c8932b" />
 <br></details> | Used for fastening the N20 motor brackets and the acrylic chassis assembly. |
-| **Tool** | <details><summary><b>Zipties & Electric Tape</b></summary><br><img width="500" height="500" alt="image" alt="image" src="https://github.com/user-attachments/assets/ba5a8db4-be3b-4241-b402-fa7aea224bff" />
+| **Tool** | <details><summary><b>Zipties & Electric Tape</b></summary><br><img width="200" height="200" alt="image" alt="image" src="https://github.com/user-attachments/assets/ba5a8db4-be3b-4241-b402-fa7aea224bff" />
 <br></details> | Essential for wire management and insulating exposed connections. |
-| **Tool** | <details><summary><b>Soldering Paste</b></summary><br><img width="500" height="500" alt="image" alt="image" src="https://github.com/user-attachments/assets/36ee7ecd-eb5d-4cc5-aae3-783c17cf1e7d" />
+| **Tool** | <details><summary><b>Soldering Paste</b></summary><br><img width="200" height="200" alt="image" alt="image" src="https://github.com/user-attachments/assets/36ee7ecd-eb5d-4cc5-aae3-783c17cf1e7d" />
 <br></details> | Facilitates cleaner and more reliable solder joints on mechanical parts. |
 
 ---
