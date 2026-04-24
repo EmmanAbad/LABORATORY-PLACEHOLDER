@@ -23,7 +23,7 @@
 
 ### Explanations of Project:
 <p align="justify">
-&nbsp;&nbsp;&nbsp;&nbsp;The project is an integrated hardware-software system designed for competitive robotics. The hardware consists of a lightweight **acrylic base** that houses the electronic brain and power system. Four **N20 Micro Metal Gear Motors** provide the mechanical drive, while the **L298N Motor Driver** acts as the interface between the low-power ESP32 signals and the high-power requirements of the motors.
+&nbsp;&nbsp;&nbsp;&nbsp;The project is an integrated hardware-software system designed for competitive robotics. The hardware consists of a lightweight acrylic base that houses the electronic brain and power system. Four N20 Micro Metal Gear Motors provide the mechanical drive, while the L298N Motor Driver acts as the interface between the low-power ESP32 signals and the high-power requirements of the motors.
 
 &nbsp;&nbsp;&nbsp;&nbsp;  On the software side, the robot is programmed using **C++ (Arduino IDE)**. The code utilizes Pulse Width Modulation (PWM) at a frequency of 1000Hz to control the speed of the motors through the `ledcWrite` function. The **Dabble app** on a smartphone acts as the remote controller, sending directional commands that the ESP32 interprets to set motor speeds at a defined maximum of 255.
 </p>
