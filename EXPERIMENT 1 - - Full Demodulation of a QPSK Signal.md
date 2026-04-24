@@ -50,6 +50,8 @@
 
 <img width="422" height="209" alt="image" src="https://github.com/user-attachments/assets/3241da0c-4587-42dd-8eab-3e6c0f35fb48" />
 
+---
+
 **Procedure – Part B: Setting up the Zero-Crossing Detector**
 1. Connect a 100kHz sine wave to the 'carrier' input of the Phase Shifter module.
 2. Use the Phase Shifter to create a $90^\circ$ difference between the original 100kHz carrier (I-channel) and the shifted version (Q-channel).
@@ -63,6 +65,7 @@
 
 <img width="491" height="321" alt="image" src="https://github.com/user-attachments/assets/87cf6134-9559-4eb4-aa93-d9e41b754939" />
 
+---
 
 **Procedure – Part C: Demodulating QPSK using the ETT-101-20 Board**
 1. Connect the output of the QPSK generator (from Part B) to the 'IN' socket of the QPSK DEMOD board.
@@ -74,6 +77,8 @@
 7. Verify that the recovered even and odd bitstreams match the original parallel bits at the transmitter.
 
 <img width="449" height="221" alt="image" src="https://github.com/user-attachments/assets/1fb5cf17-a7cb-4fc8-8ce9-fb4a9ac0789a" />
+
+---
 
 **Procedure – Part D: Effects of Noise on the QPSK Link**
 1. Insert the Noise Generator module into the circuit between the transmitter and the receiver.
@@ -89,6 +94,8 @@
 <img width="476" height="323" alt="image" src="https://github.com/user-attachments/assets/e074ff38-3c24-4d33-b1c5-639a4604652e" />
 
 <img width="461" height="262" alt="image" src="https://github.com/user-attachments/assets/73e084b1-37ac-4173-a814-7e71fc0977c1" />
+
+---
 
 **Procedure – Part E: Investigating Carrier Phase Errors**
 1. Return the system to a clean state without noise and ensure the data is being recovered correctly.
@@ -119,6 +126,7 @@
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;The most significant procedural takeaway occurred during the analysis of carrier phase errors and noise. Intentionally introducing a phase shift in the local carrier proved just how fragile QPSK can be. A small alignment error led to immediate **cross-talk**, where the I and Q channels began to "bleed" into one another, while a $180^\circ$ shift resulted in total logic inversion. These steps reinforced the idea that high spectral efficiency comes at the cost of increased receiver complexity and a strict requirement for phase synchronization.
 </p>
+
 ---
 
 ### Questions and Answers 
